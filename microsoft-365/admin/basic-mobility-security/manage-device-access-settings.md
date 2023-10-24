@@ -17,7 +17,8 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
+  - AdminSurgePortfolio
+  - has-azure-ad-ps-ref
 search.appverid:
 - MET150
 description: "For devices you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Azure AD PowerShell to get details about org devices."
@@ -106,7 +107,7 @@ To run the Get-GraphUserDeviceComplianceStatus.ps1 script, you need to enable th
 
 #### Run the Get-MgDevice cmdlet to display details for all devices in your organization
 
-1. Open the Microsoft Azure Active Directory Module for Windows PowerShell.
+1. Open the Microsoft Azure Active Directory module for Windows PowerShell.
 
 2. Run the following command.
 

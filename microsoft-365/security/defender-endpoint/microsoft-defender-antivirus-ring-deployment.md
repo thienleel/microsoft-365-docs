@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
+- mde-ngp
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
@@ -49,7 +50,7 @@ Deploying Microsoft Defender for Endpoint can be done using a ring-based deploym
 
 ## Ring deployment overview
 
-It's important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
+It's important to ensure that client components are up to date to deliver critical protection capabilities and prevent attacks.
 Capabilities are provided through several components: 
 
 - [Endpoint Detection & Response](overview-endpoint-detection-response.md)

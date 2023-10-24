@@ -54,7 +54,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
     - _Create, modify, and delete custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Apply and remove the Priority account tag from users_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
     - _Apply and remove existing custom user tags from users_: Membership in the **Organization Management** or **Security Administrator** role groups.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** and **Security Administrator** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** and **Security Administrator** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
   > [!NOTE]
   > User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
@@ -174,7 +174,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 
 - [Alerts](../defender/investigate-alerts.md)
 - [Incidents](mdo-sec-ops-manage-incidents-and-alerts.md)
-- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
+- [Custom alert policies](/purview/alert-policies#view-alerts)
 - [Threat Explorer](threat-explorer-about.md)
 - [Campaign Views](campaigns.md)
 - [Email entity page](mdo-email-entity-page.md)

@@ -46,7 +46,7 @@ This article describes how admins can manage entries for URLs in the Microsoft 3
 
 - You can enter a maximum of 250 characters in a URL entry.
 
-- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+- An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
@@ -58,7 +58,7 @@ This article describes how admins can manage entries for URLs in the Microsoft 3
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
 ## Create allow entries for URLs
 
@@ -317,6 +317,19 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 ### URL entry scenarios
 
 Valid URL entries and their results are described in the following subsections.
+
+#### Scenario: Top-level domain blocking
+
+**Entry**: `*.<TLD>/`
+
+- **Block match**:
+  - a.TLD
+  - TLD/abcd
+  - b.abcd.TLD
+  - TLD/contoso.com
+  - TLD/q=contoso.com
+  - www.abcd.TLD
+  - www.abcd.TLD/q=a@contoso.com
 
 #### Scenario: No wildcards
 
