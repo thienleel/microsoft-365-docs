@@ -2,12 +2,12 @@
 title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.reviewer: kumasumit
 ms.localizationpriority: medium
-ms.date: 10/30/2023
+ms.date: 11/30/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -15,13 +15,13 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -33,6 +33,104 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
+<details>
+	<summary> November-2023 (Build: 101.23102.0003 | Release version: 30.123102.0003.0)</summary>
+
+## November-2023 Build: 101.23102.0003 | Release version: 30.123102.0003.0
+
+&ensp;Released: **November 28,2023**<br/>
+&ensp;Published: **November 28,2023**<br/>
+&ensp;Build: **101.23102.0003**<br/>
+&ensp;Release version: **30.123102.0003.0**<br/>
+&ensp;Engine version: **1.1.23090.2008**<br/>
+&ensp;Signature version: **1.399.690.0**<br/>
+
+**What's new**
+- Updated default engine version to `1.1.23090.2008`, and default signatures version to `1.399.690.0`.
+- Updated libcurl library to version `8.4.0` to fix recently disclosed vulnerabilities with the older version.
+- Updated Openssl library to version `3.1.1` to fix recently disclosed vulnerabilities with the older version.
+- General stability and performance improvements.
+- Bug fixes.
+
+</details>
+
+<details>
+	<summary> November-2023 (Build: 101.23092.0012 | Release version: 30.123092.0012.0)</summary>
+
+## November-2023 Build: 101.23092.0012 | Release version: 30.123092.0012.0
+
+&ensp;Released: **November 14,2023**<br/>
+&ensp;Published: **November 14,2023**<br/>
+&ensp;Build: **101.23092.0012**<br/>
+&ensp;Release version: **30.123092.0012.0**<br/>
+&ensp;Engine version: **1.1.23080.2007**<br/>
+&ensp;Signature version: **1.395.1560.0**<br/>
+
+**What's new**
+
+There are multiple fixes and new changes in this release: 
+
+- Support added to restore threat based on original path using the following command:
+  
+ ```bash
+ sudo mdatp threat quarantine restore threat-path --path [threat-original-path] --destination-path [destination-folder]
+```
+  - Starting with this release, Microsoft Defender for Endpoint on Linux will no longer be shipping a solution for RHEL 6.
+  
+    RHEL 6 'Extended end of life support' is poised to end by June 30, 2024 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run Defender for Endpoint on RHEL 6 servers can continue to leverage version 101.23082.0011 (does not expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
+  - Engine Update to `1.1.23080.2007` and Signatures Ver: `1.395.1560.0`.
+  - Streamlined device connectivity experience is now in public preview mode. [public blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-a-streamlined-device-connectivity-experience-for/ba-p/3956236)
+  - Performance improvements & bug fixes.
+
+**Known issues**
+
+- CPU lock-up seen on kernel version 5.15.0-0.30.20 in ebpf mode, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](linux-support-ebpf.md) for details and Mitigation options.
+
+</details>
+
+<details>
+	<summary> November-2023 (Build: 101.23082.0011 | Release version: 30.123082.0011.0)</summary>
+
+## November-2023 Build: 101.23082.0011 | Release version: 30.123082.0011.0
+
+&ensp;Released: **November 1,2023**<br/>
+&ensp;Published: **November 1,2023**<br/>
+&ensp;Build: **101.23082.0011**<br/>
+&ensp;Release version: **30.123082.0011.0**<br/>
+&ensp;Engine version: **1.1.23070.1002**<br/>
+&ensp;Signature version: **1.393.1305.0**<br/>
+
+**What's new**
+This new release is build over October 2023 release (`101.23082.0009``) with addition of following changes. There's no change for other customers and upgrading is optional.
+
+Fix for immutable mode of auditd when supplementary subsystem is ebpf:  In ebpf mode all mdatp audit rules should be cleaned after switching to ebpf and rebooting.  After reboot, mdatp audit rules were not cleaned due to which it was resulting in hang of the server.  The fix cleans these rules, user should not see any mdatp rules loaded on reboot
+
+Fix for MDE not starting up on RHEL 6.
+
+**Known issues**
+
+When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
+
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading.
+Some customers (<1%) experience issues with this method.
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
 
 <details>
 	<summary> October-2023 (Build: 101.23082.0009 | Release version: 30.123082.0009.0)</summary>
@@ -214,7 +312,7 @@ sudo systemctl disable mdatp
 	- With this release we provided two options in mdatp diagnostic hot-event-sources:
         1. Files
         2. Executables
-	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft 365 Defender
+	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft Defender XDR
 	- Improved logging in Network Protection block and audit events for debugging
 - Other fixes and improvements
     - From this version, enforcementLevel are in passive mode by default giving admins more control over where they want 'RTP on' within their estate
@@ -419,7 +517,7 @@ sudo systemctl disable mdatp
 
 **Known issues**
 
-- While upgrading mdatp to version `101.94.13` or later, you might notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+- While upgrading mdatp to version `101.94.13` or later, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -527,7 +625,7 @@ In case the issue reappears with some different denials. We need to run the miti
 	
 **Known issues**
 
-- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Make sure to back up following file: `/etc/audit/rules.d/audit.rules`` as these steps are only to identify failures.
+- While upgrading mdatp to version 101.94.13, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Make sure to back up following file: `/etc/audit/rules.d/audit.rules`` as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -586,7 +684,7 @@ sudo systemctl disable mdatp
 
 **Known issues**
 
-- While upgrading mdatp to version `101.94.13`, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Take a backup of following file: `/etc/audit/rules.d/audit.rules` as these steps are only to identify failures.
+- While upgrading mdatp to version `101.94.13`, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Take a backup of following file: `/etc/audit/rules.d/audit.rules` as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules

@@ -4,8 +4,8 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: magarlan, chrigreen
-ms.date: 06/09/2023
+ms.reviewer: taylorau
+ms.date: 12/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -33,6 +33,8 @@ During the GDAP setup process, you create GDAP templates by configuring what sup
 ## Watch: Set up GDAP
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e61P]
+
+Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 
 ## Before you begin
 
@@ -157,7 +159,7 @@ It may take a minute or two for the settings you've configured to apply. If you 
 > For customers with an existing DAP relationship, these settings are automatically applied. Customers with an Active status on the last page of GDAP Setup are assigned to roles and security groups as defined in the GDAP template.  
 
 > [!NOTE]
-> For customers without an existing DAP relationship, an admin relationship request link is generated for each customer on the last page of GDAP Setup. From there, you can send the link to your customer's Global Administrator so they can approve the GDAP relationship. Once the relationship is approved, rerun GDAP Setup to assign the security groups to the GDAP relationship created for that customer.
+> For customers without an existing DAP relationship, an admin relationship request link is generated for each customer on the last page of GDAP Setup. From there, you can send the link to your customer's Global Administrator so they can approve the GDAP relationship. Once the relationship is approved, the GDAP template settings will be applied.
 
 Once you've completed GDAP Setup, you can navigate to different steps to update or change roles, security groups, or templates. GDAP relationships are now visible in Partner Center and the security groups are now visible in Microsoft Entra ID.
 
