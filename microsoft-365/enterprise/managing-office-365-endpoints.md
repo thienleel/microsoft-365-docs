@@ -3,15 +3,17 @@ title: Managing Microsoft 365 endpoints
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/30/2023
+ms.date: 01/19/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

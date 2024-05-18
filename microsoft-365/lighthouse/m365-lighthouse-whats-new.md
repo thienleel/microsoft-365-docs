@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 11/17/2023
+ms.date: 5/13/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-navigation
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
@@ -30,6 +31,110 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## May 2024
+
+### Improved tenant details page
+
+We've improved the tenant details page to provide a more comprehensive view of customer tenant details. We'll release these improvements in stages over the next few months. The improved tenant details page includes a redesigned **Overview** tab that has a **Summary** section showing high-level insights around baseline deployment progress and alerts, and an expanded **Customer information** section where you can record notes about the customer to facilitate collaboration with your colleagues. We also added an **Action items** tab where you can view summarized tasks for the tenant that require your attention. This new tab includes links to the relevant pages to perform the tasks, providing an easy way to view details and take action.
+
+To check out these improvements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page and view the **Overview** tab. From there you can also access the new **Action items** tab. 
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
+
+## April 2024
+
+### Lighthouse RBAC Account Manager role requirement update
+
+You no longer need to have a Microsoft Entra ID P1 license to manage the Lighthouse RBAC Account Manager role. This change means that security groups assigned to the Lighthouse RBAC Account Manager role no longer need to be a role-assignable group. You can now assign any security group, including existing security groups, to the Lighthouse RBAC Account Manager role. 
+
+[Go to the Lighthouse permissions page now ](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RBAC.ReactView)
+
+To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+
+### Apps & services usage on the Tenants page
+
+We've added a new column to the **Tenants** page in Microsoft 365 Lighthouse that shows the apps and services usage of each customer. This helps you identify customers who aren't fully utilizing the potential of Microsoft 365 and might need your guidance or support. The column displays the usage status of four core workloads: core Microsoft apps (Word, Excel, PowerPoint, and OneNote), Teams, storage (SharePoint or OneDrive), and email (Exchange). A customer who has very low or no adoption of any of these workloads is marked as unhealthy. You can use this information to prioritize your actions and reach out to those customers who need more assistance or help setting up their Microsoft 365 subscription.
+
+To access this functionality, in the left navigation pane in Lighthouse, select **Tenants**, and then check out the **Apps & services usage** column on the **Tenants** page.
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView)
+
+To learn more, see [Overview of the Tenants page](m365-lighthouse-tenants-page-overview.md).
+
+### Manage Microsoft 365 app health from Lighthouse 
+
+The new App management report lets you easily monitor and manage Microsoft 365 app health across your customer tenants. For example, you can check to see if customer devices have Cloud Update enabled, which ensures apps are always up to date. The report also identifies which Microsoft 365 app channels are deployed across customer tenants that have the inventory service enabled in the Microsoft 365 Apps admin center and which app channels customers are receiving updates through.  
+
+In addition, the App management report makes it easy to determine if customers are running unsupported Office builds or are behind on the latest build. This helps you proactively identify potential end-user issues that could arise from using Office builds that are out of date. These insights are available for any customers with Win32 devices&mdash;there's no Intune requirement on the customer tenant. 
+
+To access this new report, go to **Apps** > **App management**.  
+
+[Go to the App management page now ](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/AppHealthManagement.ReactView)
+
+## March 2024
+
+### Feedback and support widget
+
+We've made it easier for you to give us feedback. Check out the new feedback and support widget in the lower-right corner of the Lighthouse portal. Make a suggestion, report a problem, or give a compliment by simply selecting the widget. Share your comments today through our enhanced feedback tool and let us know how Lighthouse is working for you.
+
+## February 2024
+
+### Management of PowerShell scripts
+
+You can now create PowerShell scripts and check results for Intune-managed devices in Microsoft 365 Lighthouse instead of having to go to the device Scripts page in the Microsoft Intune admin center for each customer. To access this functionality, select **Tenants** from the left navigation pane in Lighthouse, select a tenant from the list, and then select the **Scripts** tab.
+
+To create a script, select **Create script**. To view a list of targeted devices and the last run time for an existing script, select a script from the list. You can run scripts against all Intune-managed devices in a customer tenant or you can target devices by using Microsoft Entra groups.
+
+## January 2024
+
+### Track upcoming subscription renewals
+
+To help you prioritize and drive subscription renewal discussions with customers more effectively, we've added a page to Microsoft 365 Lighthouse that lets you track customer subscriptions that are expiring within the next 90 days.
+
+To access this new page, in the left navigation pane in Lighthouse, select **Sales Advisor (Project Orland)** > **Upcoming renewals**.
+
+If you're new to Sales Advisor, you must be a Lighthouse Account Manager in your partner tenant to access the **Upcoming renewals** page. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). If you already have access to Sales Advisor, you don't need the Lighthouse Account Manager role at this time.
+
+The **Upcoming renewals** page lists all customer subscriptions, sorted by subscription expiration date. You can sort and filter the list by expiration date, billing frequency, recurring billing status, number of licenses, and more. To make it easier to see all expiring subscriptions for each tenant, switch to the **Group list by tenant** view. 
+
+[Go to the Upcoming renewals page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/UpcomingRenewals.ReactView) 
+
+To learn more, see "Optimize your renewal conversations with simplified renewal insights" in [Blog post: Unlock the Copilot opportunity and grow your CSP business with Microsoft 365 Lighthouse](https://go.microsoft.com/fwlink/?linkid=2257055).
+
+### Microsoft Copilot opportunities in Sales Advisor
+
+We've added Microsoft Copilot opportunities to Sales Advisor to help you identify customers who are eligible to buy Microsoft Copilot for Microsoft 365. Microsoft Copilot is an AI companion that works everywhere you do and intelligently adapts to your needs.
+
+To access Copilot opportunities, in the left navigation pane in Microsoft 365 Lighthouse, select **Sales Advisor (Project Orland)** > **Opportunities**, and then select the **Customer growth** tab.
+
+Select a Copilot opportunity to see customer insights, suggested actions, and resources to engage with the customer.
+
+[Go to the Opportunities page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/OrlandInsights.ReactView)
+
+To learn more, see [Blog post: Unlock the Copilot opportunity and grow your CSP business with Microsoft 365 Lighthouse](https://go.microsoft.com/fwlink/?linkid=2257335).
+
+### Assign GDAP template settings automatically after customer approval of GDAP relationships
+
+You can now set up granular delegated admin privileges (GDAP) for any customer tenant&mdash;regardless of which delegated relationship has already been set up&mdash;without the need for extra steps after a GDAP relationship is activated. Assign a GDAP template to any customer tenant in Microsoft 365 Lighthouse, and once the customer approves the relationship, the security groups and support roles are automatically applied. There's no need to re-run GDAP Setup or take extra steps after a relationship is activated to apply all GDAP template settings.
+
+To assign a GDAP template, go to the **Home** page of Lighthouse and select **Set up GDAP** on the **GDAP Setup** card.
+
+[Go to GDAP Setup now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/SetupGdap.ReactView)
+
+To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md).
+
+### Manage Sales Advisor access with new Lighthouse Account Manager role
+
+You can now manage Sales Advisor access directly from the Lighthouse permissions page in Microsoft 365 Lighthouse. Assign the Lighthouse Account Manager role to users in your partner tenant who need full access to Sales Advisor pages, data across the entire partner tenant, and capabilities like the ability to export data.
+
+To assign the Lighthouse Account Manager role, go to **Permissions** > **Lighthouse permissions**.
+
+Stay tuned for the announcement of additional Lighthouse management roles that you can use to further manage partner-tenant permissions in Lighthouse.
+
+[Go to the Lighthouse permissions page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RBAC.ReactView)
+
+To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ## October 2023
 
@@ -53,16 +158,6 @@ Data availability insights have been added to the following pages:
 
 To see the insights, go to any of these pages in Lighthouse.
 
-### Assign GDAP template settings automatically after customer approval of GDAP relationships
-
-You can now set up granular delegated admin privileges (GDAP) for any customer tenant&mdash;regardless of which delegated relationship has already been set up&mdash;without the need for extra steps after a GDAP relationship is activated. Assign a GDAP template to any customer tenant in Microsoft 365 Lighthouse and, once the customer approves the relationship, the security groups and support roles are automatically applied. There's no need to re-run GDAP Setup or take extra steps after a relationship is activated to apply all GDAP template settings.
-
-To assign a GDAP template, go to the **Home** page of Lighthouse and select **Set up GDAP** on the **GDAP Setup** card.
-
-[Go to GDAP Setup now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/SetupGdap.ReactView)
-
-To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md).
-
 ## September 2023
 
 ### Windows event logs
@@ -70,6 +165,10 @@ To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](
 The **Windows event logs** page in Microsoft 365 Lighthouse uses artificial intelligence (AI) to generate suggestions for mitigating issues found in Windows event logs. The "Collect Windows event logs" baseline enables collection of managed device event logs. After records have been ingested, you can view them by selecting **Devices** > **Windows event logs** in the left navigation pane in Lighthouse. To see additional details, select any log entry.
 
 [Go to the Windows event logs page now](https://lighthouse.microsoft.com/view/Microsoft_Intune_MTM/WindowsEventLogs.ReactView)
+
+### Quick actions on the Home page
+
+You can now perform common actions like adding a new user, tagging your tenants, accessing other admin centers, and more from the Microsoft 365 Lighthouse Home page. The new command bar at the top of the Home page helps you find and perform these actions whenever you need them.
 
 ## August 2023
 

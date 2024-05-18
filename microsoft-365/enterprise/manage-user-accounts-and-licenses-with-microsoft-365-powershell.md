@@ -3,14 +3,16 @@ title: "Manage Microsoft 365 user accounts, licenses, and groups with PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/13/2020
+ms.date: 01/24/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

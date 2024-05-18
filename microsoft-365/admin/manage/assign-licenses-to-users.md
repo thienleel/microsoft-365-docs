@@ -9,6 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -40,7 +41,7 @@ You can assign or unassign licenses for users in the Microsoft 365 admin center 
 
 > [!NOTE]
 >
-> - As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a purchase or trial subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-purchase-or-trial-subscription), and then assign or unassign licenses.
+> - As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a purchase or trial subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-or-trial-subscription), and then assign or unassign licenses.
 > - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 [Learn how to add a user and assign a license at the same time](../add-users/add-users.md).
@@ -62,6 +63,9 @@ You can assign or unassign licenses for users in the Microsoft 365 admin center 
 The **Licenses** page lets you assign or unassign licenses for up to 20 users at a time. The page shows the products you own, the number of available licenses for each product, and the number of assigned licenses out of the total licenses available.
 
 The **Licenses** page shows an aggregate total of licenses for all subscriptions for the same product name. For example, you might have one subscription for Microsoft 365 Business Premium that has five licenses, and another subscription that has eight licenses for the same product. The **Licenses** page shows that you have a total of 13 licenses for Microsoft 365 Business Premium across all your subscriptions. This number is different from what you see on the **Your products** page, which displays a row for each subscription you own, even if they are for the same product.
+
+> [!IMPORTANT]
+> If you want to assign a license to a guest user, follow the steps in [Assign a license to a guest user](#assign-a-license-to-a-guest-user).
 
 ### Assign licenses by using the Licenses page
 
@@ -93,6 +97,9 @@ If there's a conflict, you see a message that tells you what the problem is, and
 
 When you use the **Active users** page to assign or unassign licenses, you assign or unassign users licenses to products.
 
+> [!IMPORTANT]
+> If you want to assign a license to a guest user, follow the steps in [Assign a license to a guest user](#assign-a-license-to-a-guest-user).
+
 ### Assign licenses to one user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
@@ -116,7 +123,7 @@ When you use the **Active users** page to assign or unassign licenses, you assig
 
 ## Assign a license to a guest user
 
-You can invite guest users to collaborate with your organization in the Microsoft Entra admin center. To learn about guest users, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add a guest user and send an invitation](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+You can invite guest users to collaborate with your organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Microsoft Entra admin center</a>. To learn about guest users, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add a guest user and send an invitation](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > You must be a Global admin to do these steps.

@@ -5,13 +5,14 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prlachhw, socheng
+ms.reviewer: sijoshi, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
-- Tier2
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -93,6 +94,7 @@ The following table lists the available products and their **ProductId**. It als
 
 | Product | ProductId | Is trial without payment method enabled? |
 |-----------------------------|--------------|--------------|
+| Clipchamp Premium | CFQ7TTC0N8SS | No |
 | Power Apps per user* | CFQ7TTC0LH2H | No |
 | Power Automate per user* | CFQ7TTC0LH3L | No |
 | Power Automate RPA* | CFQ7TTC0LSGZ  | No |
@@ -105,15 +107,8 @@ The following table lists the available products and their **ProductId**. It als
 | Visio Plan 1* | CFQ7TTC0HD33 | Yes |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals (self-service trials only) | CFQ7TTC0PW0V | Yes |
-| Windows 365 Enterprise | CFQ7TTC0HHS9 | No |
-| Windows 365 Business | CFQ7TTC0J203 | No |
-| Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 | No |
 | Microsoft 365 F3 | CFQ7TTC0LH05 | No |
 | Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
-| Dynamics 365 Marketing | CFQ7TTC0LH3N | No |
-| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | No |
-| Dynamics 365 Marketing Additional Application | CFQ7TTC0LHVK | No |
-| Dynamics 365 Marketing Additional Non-Prod Application | CFQ7TTC0LHWM | No |
 
 *These IDs have changed. If you previously blocked products using the old IDs, they're automatically blocked using the new IDs. No other work is required.
 

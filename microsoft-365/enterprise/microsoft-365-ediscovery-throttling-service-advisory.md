@@ -7,6 +7,7 @@ ms.date: 10/14/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -42,6 +43,6 @@ You can expect to see this type of advisory until the time where the Search and 
 
 ## More information
 
-- For information about troubleshooting and resolving eDiscovery compliance issues, see [Microsoft Purview troubleshooting](/troubleshoot/microsoft-365-compliance-welcome).
+- For information about troubleshooting and resolving eDiscovery compliance issues, see [Microsoft Purview troubleshooting](/microsoft-365/troubleshoot/microsoft-365-compliance-welcome).
 - For information about Microsoft Purview, see [What is Microsoft Purview?](/purview/purview)
 - To learn more about Microsoft Purview eDiscovery solutions, see [Microsoft Purview eDiscovery solutions](~/compliance/ediscovery.md)
