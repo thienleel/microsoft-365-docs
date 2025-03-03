@@ -3,9 +3,9 @@ title: Use roles to define your frontline managers and workers in Shifts
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.topic: conceptual
+ms.topic: how-to
 audience: admin
-ms.reviewer: imarquesgil
+ms.reviewer: harrywong
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:

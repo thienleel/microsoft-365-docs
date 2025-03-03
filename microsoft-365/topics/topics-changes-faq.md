@@ -1,12 +1,12 @@
 ---
 ms.date: 02/20/2024
 title: Frequently asked questions about changes coming to Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
-ms.topic: article
+ms.topic: faq
 ms.collection:
   - m365initiative-viva-topics
   - Tier1

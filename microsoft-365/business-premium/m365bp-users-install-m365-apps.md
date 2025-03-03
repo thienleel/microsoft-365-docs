@@ -7,13 +7,13 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 11/02/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -35,7 +35,7 @@ Microsoft 365 Business Premium includes Microsoft 365 Apps, such as Word, PowerP
 
 ## Watch: Install Microsoft 365 Apps
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false title="Install Microsoft 365 Apps for your business"]
+> [!VIDEO dc089097-90e3-4e20-a10b-985e58240101]
 
 Here's how users can install their apps:
 
@@ -52,4 +52,4 @@ Here's how users can install their apps:
 
 ## Next step
 
-Set up protection for [unmanaged devices](m365bp-protect-pcs-macs.md).
+Set up protection for [unmanaged devices](m365bp-users-protect-unmanaged-devices.md).

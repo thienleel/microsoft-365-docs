@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
@@ -21,7 +21,7 @@ description: "Learn how to request a credit on your account for Withholding Tax 
 ms.custom: 
 - commerce_billing
 - AdminSurgePortfolio
-ms.date: 11/29/2023
+ms.date: 10/06/2024
 ---
 
 # Request a credit for Withholding Tax on your account (Global customers)

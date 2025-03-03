@@ -3,8 +3,8 @@ title: Prerequisites and requirements for the Teams Shifts connector for UKG Pro
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: imarquesgil
-ms.topic: conceptual
+ms.reviewer: harrywong
+ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/31/2023
+ms.date: 12/20/2024
 ---
 
 # Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management
@@ -26,7 +26,7 @@ ms.date: 10/31/2023
 
 The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) enables you to integrate the Shifts app in Microsoft Teams with your UKG Pro Workforce Management (UKG Pro WFM) system. Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
+You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell. There are no additional licensing fees for using the connector.
 
 This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the [wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection. It also gives you an overview of how to set up your teams in Teams based on your UKG Pro WFM organizational structure.
 
@@ -59,7 +59,7 @@ Make sure you gather the following information and complete the following config
 
 ### Accounts
 
-- You're a Microsoft 365 global admin.
+- You're a Microsoft 365 Global Administrator.
 - You know your UKG Pro WFM account username and password, along with the following service URLs:
 
     - API URL
@@ -151,11 +151,7 @@ Use PowerShell to remove schedule entities from teams.
 
 To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
-<!--## Roles and permissions in Teams and their impact on Shifts-->
-
 ## Understand how your UKG Pro Workforce Management organizational structure influences Teams and Shifts setup
-
-<!--The way you organize your teams in Teams depends on your UKG Pro WFM structure.-->
 
 As mentioned earlier, Shifts supports grouping users by location in UKG Pro WFM. In UKG Pro WFM, the nodes in each location represent the hierarchy in your organizational chart. A location path reaches its endpoint when a job type is configured.
 
@@ -175,7 +171,7 @@ Assumptions:
 - Some frontline workers are allowed to take shifts from other stores within the Central London Area. In other words, in UKG Pro WFM, these frontline workers are part of a job transfer set.
 
 > [!NOTE]
-> Shifts doesn't yet support workers' requests across different teams. This means that workers can't offer or swap shifts with workers who are in different locations (that is, on different teams in Teams). Workers can only perform these actions within their own team.
+> Shifts doesn't yet support workers' requests across different teams when integrated with a WFM system. This means that workers can't offer or swap shifts with workers who are in different locations (that is, on different teams in Teams). Workers can only perform these actions within their own team.
 
 ### UKG Pro Workforce Management location structure
 
@@ -187,12 +183,12 @@ Here's how frontline managers (FLM) and frontline workers (FLW) are set up in th
 
 |UKG Pro WFM location|Users|Primary job|Reports to|
 |---------|---------|---------|---------|
-|Contoso/Retail/Central London/Soho|FLW1&sup1;, FLW2<br>FLW3, FLW4<br>FLW5&sup2;, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
+|Contoso/Retail/Central London/Soho|FLW1<sup>1</sup>, FLW2<br>FLW3, FLW4<br>FLW5<sup>2</sup>, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
 |Contoso/Retail/Central London/Covent Garden|FLW11, FLW12<br>FLW13, FLW14|Leather goods sales associate<br>Sales associate|FLM2|
 |Contoso/Retail/Central London/Chelsea|FLW15<br>FLW16<br>FLW17|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
 
-&sup1;FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
-&sup2;FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
+<sup>1</sup>FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
+<sup>2</sup>FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
 
 #### What does this mean when I set up teams in Teams?
 
@@ -214,8 +210,6 @@ In this scenario, the IT admin organizes teams in Teams as follows.
     > [!NOTE]
     > In UKG Pro WFM, if you have departments with business locations, create teams for each department (instead of for each store). As mentioned earlier in this article, to establish the mapping between platforms, we take the location path up to the node and consider that a team.
 
-    <!--As mentioned earlier in this article, to establish the mapping between platforms, employees who have the same location path up to node before the job type are considered as part of the same team-->
-
 #### What does this mean when I run the Shifts connector wizard?
 
 When the IT admin sets up a connection instance in the [wizard](shifts-connector-wizard-ukg.md), they map each store location to the relevant team, as shown in the following table.
@@ -235,12 +229,12 @@ Within each store, in Shifts:
 - Frontline managers see employees within their respective schedule groups (that is, job types).
 - Frontline workers see their own schedule and their team's schedule.
 - Frontline workers can communicate with coworkers in their own store through chat.
-- Frontline workers and managers can request time off, swap shifts, offer shifts and open shifts if the requests are configured in UKG Pro WFM and set to be synced in the connection instance settings that you configure in the [wizard](shifts-connector-wizard-ukg.md).
+- Frontline workers and managers can request time off, swap shifts, offer shifts, and open shifts if the requests are configured in UKG Pro WFM and set to be synced in the connection instance settings that you configure in the [wizard](shifts-connector-wizard-ukg.md).
 - Frontline workers and managers can reach other employees in their store who are on shift, if [shift-based tags](/microsoftteams/manage-tags) are enabled.
 
 For employees who work at multiple stores, in Shifts:
 
-- Frontline workers and managers can only make requests within a particular store. Shifts currently doesn't support workers' request between different stores.
+- Frontline workers and managers can only make requests within a particular store. Shifts currently doesn't support workers' requests between different stores when integrated with a WFM system.
 - Frontline workers can view their schedule and their team’s schedule in any store they work at.
 
 ## Related articles

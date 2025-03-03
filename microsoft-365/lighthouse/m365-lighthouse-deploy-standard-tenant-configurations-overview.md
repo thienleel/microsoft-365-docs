@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: jatingupta
 ms.date: 02/14/2024
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -31,7 +31,7 @@ To view the Microsoft 365 Lighthouse default baseline that applies to all tenant
 
 ## Watch: Deploy baselines
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dQib]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2460eb16-7ca6-4956-ae2a-2dadceac7eb1]
 
 Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 

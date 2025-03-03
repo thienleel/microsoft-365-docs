@@ -23,9 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
+- campaignIDs-batch1
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to cancel your trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 10/13/2023
+ms.date: 09/10/2024
 ---
 
 # Cancel your subscription in the Microsoft 365 admin center
@@ -43,16 +46,15 @@ If you have **Microsoft 365 Family** or **Microsoft 365 Personal**, see [Cancel 
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about Billing account roles and Billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../billing-and-payments/manage-billing-profiles.md).
-- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA), you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 - If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
-- If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).
+- If you have a domain subscription and do not want it to renew, [turn off recurring billing](renew-your-subscription.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
-## What's the easiest way to cancel?
-
-The easiest way to cancel your subscription is to [turn off recurring billing](renew-your-subscription.md). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
+> [!IMPORTANT]
+> If you have an MCA billing account type, you automatically receive a product called Microsoft Entra ID Free. Because this product helps manage your billing account, you can't cancel it. However, if you want to close your billing account, call Support and they can help cancel the subscription and close the account. To learn more, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free).
 
 ## How do I cancel my free trial?
 
@@ -70,7 +72,7 @@ Your cancellation option depends on the type of billing account that you have. [
 
 ### If you have an MCA billing account type
 
-You can only cancel and receive a prorated credit or refund if you cancel within seven days after the start or renewal of your subscription. If you cancel during this limited time window, the prorated amount is either credited towards your next invoice or returned to you in the next billing cycle.
+You can only cancel and receive a prorated credit or refund if you cancel within seven days after the start or renewal of your subscription. If you cancel during this limited time window, the prorated amount is either credited or returned on the monthly invoice around the beginning of the following month.
 
 If you need to cancel within seven days after the start or renewal of your subscription, go to [Steps to cancel your subscription](#steps-to-cancel-your-subscription) later in this article.
 
@@ -89,8 +91,6 @@ The steps to cancel your trial or paid subscription depend on the number of lice
 |--------------|--------------|
 |25 or fewer licenses  | [Use the steps later in this article to cancel your trial or paid subscription](#steps-to-cancel-your-subscription) online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.        |
 |More than 25 licenses   | [Reduce the number of licenses](../licenses/buy-licenses.md) to 25 or fewer and then [use the steps later in this article to cancel](#steps-to-cancel-your-subscription).      |
-
-If you can't reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). Turning off recurring billing prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
 
 If you're unable to cancel your subscription, [contact support](../../admin/get-help-support.md) for help.
 
@@ -126,9 +126,6 @@ You can cancel your subscription in the Microsoft 365 admin center. However, the
 
 Your subscription status now shows as **Disabled**, and has reduced functionality until it's deleted. For information about what to expect when you cancel a paid Microsoft 365 for business subscription, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
-> [!NOTE]
-> If you're a partner who's an admin on behalf of (AOBO) a customer, and you've canceled a subscription, it can take up to 90 days for the admin center to reflect the status change.
-
 > [!WARNING]
 > If you explicitly delete a subscription, it skips the **Expired** and **Disabled** states and the SharePoint Online data and content, including OneDrive content, is deleted immediately.
 
@@ -145,7 +142,7 @@ For more information, see [What happens to my data and access when my Microsoft 
 
 ### Uninstall Microsoft 365 (optional)
 
-If you canceled your subscription and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 apps display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). To avoid any confusion, have your users [uninstall Microsoft 365](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) from their computers.
+If you canceled your subscription and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and apps in Microsoft 365 display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). To avoid any confusion, have your users [uninstall Microsoft 365](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) from their computers.
 
 ### Offboard devices from Microsoft Defender for Business (optional)
 

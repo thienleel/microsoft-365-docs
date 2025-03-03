@@ -2,19 +2,19 @@
 title: "Protect unmanaged devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: chrisda
+author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 11/02/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:

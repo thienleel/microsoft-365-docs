@@ -3,9 +3,9 @@ title: "Use PowerShell to perform a staged migration to Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/07/2022
+ms.date: 06/27/2024
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -14,6 +14,7 @@ search.appverid:
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - NOCSH
 ms.custom: 

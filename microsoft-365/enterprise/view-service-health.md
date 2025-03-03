@@ -3,9 +3,9 @@ title: How to check Microsoft 365 service health
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/19/2023
+ms.date: 06/27/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: high
@@ -22,6 +22,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-subscription-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -37,14 +38,14 @@ description: View the health status of Microsoft 365 services before you call su
 
 You can view the health of your Microsoft services, including Office on the web, Microsoft Teams, Exchange Online, and Microsoft Dynamics 365 on the **Service health** page in the  [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you're experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-If you're unable to sign in to the admin center, you can use the [service status page](https://status.cloud.microsoft) to check for known issues preventing you from logging into your tenant. Also, sign up to follow us at [@MSFT365status](https://twitter.com/MSFT365Status) on **X** (Twitter) to see information on certain events.
+If you're unable to sign in to the admin center, you can use the [service status page](https://status.cloud.microsoft) to check for known issues preventing you from logging into your tenant. Also, sign up to follow us at [@MSFT365status](https://x.com/MSFT365Status) on **X** (Twitter) to see information on certain events.
 
 ## How to check service health
 
 1. Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339), and sign in with an admin account.
 
     > [!NOTE]
-    > People who are assigned the global admin role can view service health, as well as people assigned to other admin roles such as Service Support admin and Helpdesk admin. For more information about roles that can view service health, see [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
+    > People who are assigned the Service Support admin and Helpdesk admin role can view service health. For more information about roles that can view service health, see [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
 2. To view service health, in the left-hand navigation of the admin center, go to **Health** > **Service health**, or select the **Service health** card on the **Home dashboard**. The dashboard card indicates whether there's an active service issue and links to the detailed **Service health** page.
 

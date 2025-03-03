@@ -3,9 +3,9 @@ title: "Integrated apps and Microsoft Entra ID for Microsoft 365 administrators"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/14/2024
+ms.date: 12/06/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium

@@ -6,7 +6,7 @@ manager: jtremper
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
@@ -27,6 +27,9 @@ This is Step 6 in a solution designed to complete a Cross-tenant OneDrive migrat
 - Step 5: [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)
 - **Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)**
 - Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
+
+>[!IMPORTANT]
+>Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 Now you're ready to start your OneDrive migration.  Before starting any cross-tenant migration, do the following steps.
 

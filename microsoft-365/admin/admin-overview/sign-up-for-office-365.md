@@ -34,12 +34,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: "Learn how to choose a Microsoft 365 for business plan, sign up, and set up your subscription."
-ms.date: 01/11/2024
+ms.date: 11/04/2024
 ---
 
 # How to sign up for a Microsoft 365 for business plan - Admin Help
 
-When you sign up for a Microsoft 365 for business plan, your team can begin using the latest versions of Word, Excel, PowerPoint, and other Microsoft 365 apps. You can sign up and get started with a Microsoft 365 for business plan in three easy steps.
+When you sign up for a Microsoft 365 for business plan, your team can begin using the latest versions of Word, Excel, PowerPoint, and other apps in Microsoft 365. You can sign up and get started with a Microsoft 365 for business plan in three easy steps.
 
 Check out our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/p/?linkid=2224585).
 
@@ -55,7 +55,7 @@ If you need extra help with deciding which plan is right for you, sales consulta
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p?linkid=2198032).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
+> [!VIDEO 0d0dbfb5-7a00-4ed5-b21e-c5f5f69bed43]
 
 If you found this video helpful, check out the [complete Microsoft 365 training series for small businesses](../../business-video/index.yml).
 
@@ -67,7 +67,7 @@ You can cancel your free trial at any time to stop future charges. To cancel a f
 
 ### Watch: Sign up for Microsoft 365 Business Standard
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1fe831f-c1a4-4d81-a475-1d8036a047cb]
 
 ### Information we ask for when you sign up
 

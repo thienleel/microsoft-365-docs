@@ -48,7 +48,7 @@ You must be a global, license, or a user admin to add users and assign licenses.
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198205).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5cbb17c5-30f3-42cd-a10e-d07c3013c609]
 
 > [!NOTE]
 > The steps used in the video show a different starting point for adding users, but the remaining steps are the same as the following procedure.
@@ -112,7 +112,7 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 
 ## Watch: Add multiple user
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aOTI?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1c0d7aa1-ac30-4e7c-b889-27162883945b]
 
 ## Add multiple users at the same time in dashboard view
 
@@ -132,8 +132,8 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 You can also use any of the following methods to add multiple users at the same time:
 
 - **Automate adding accounts and assigning licenses.** See [Create user accounts with Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Choose this method if you're already familiar with using Windows PowerShell cmdlets.
-- **Using ActiveDirectory?** [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md). Use the Microsoft Entra Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other Microsoft 365 apps.
-- **Migrating from Exchange?** See [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you automatically add users as part of the migration. The migration only adds the user accounts. You must assign licenses to the users before they can use email and other Microsoft 365 apps. If you don't assign a license to a user, their mailbox is disabled after a grace period of 30 days. Learn how to [assign licenses to users](../manage/assign-licenses-to-users.md) in the Microsoft 365 admin center.
+- **Using ActiveDirectory?** [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md). Use the Microsoft Entra Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other apps for Microsoft 365.
+- **Migrating from Exchange?** See [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you automatically add users as part of the migration. The migration only adds the user accounts. You must assign licenses to the users before they can use email and other apps for Microsoft 365. If you don't assign a license to a user, their mailbox is disabled after a grace period of 30 days. Learn how to [assign licenses to users](../manage/assign-licenses-to-users.md) in the Microsoft 365 admin center.
 
 ## Create, edit, or delete custom user views
 

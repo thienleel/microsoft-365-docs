@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 11/15/2023
+ms.date: 01/16/2025
 audience: enabler
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -20,7 +20,7 @@ description: Learn about SharePoint eSignature and how to send electronic signat
 # Overview of SharePoint eSignature
 
 > [!NOTE]
-> Through June 2024, you can try out eSignature and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of eSignature by sending up to five requests at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
 SharePoint eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
 
@@ -28,33 +28,39 @@ With SharePoint eSignature, you can quickly and securely send documents for sign
 
 ![Diagram showing the eSignature process.](../media/content-understanding/esignature-overview-flow.png)
 
+## Regional availability
+
+SharePoint eSignature is currently available in the US, UK, Canada, the EU, and Australia Pacific. It will be available worldwide later in 2025. Furthermore, the use of other eSignature providers as an integration with the SharePoint eSignature platform is available globally.
+
 ## Before you begin
 
-## Legal considerations
+### Legal considerations
 
-SharePoint eSignature uses simple electronic signatures. Determine whether this is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
-
+SharePoint eSignature uses simple electronic signatures as defined under applicable law including, but not limited, to the Regulation (EU) No 910/2014 (the eIDAS Regulation). Determine whether this is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
 ### Licensing
 
 Before you can use SharePoint eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). SharePoint eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). Before you can enable SharePoint eSignature, an admin must [set up SharePoint eSignature](esignature-setup.md) in the Microsoft 365 admin center.
 
-
 ### External sharing
 
-SharePoint eSignature enables binding agreements between parties by allowing guests access to SharePoint to electronically sign documents. Certain external sharing must be enabled at a tenant or site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
+SharePoint eSignature enables binding agreements between parties. External parties are allowed guests access to SharePoint via Microsoft Entra ID in order to electronically sign a document. Certain external sharing settings must be enabled at a tenant and site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
 
+## Using other signature providers
 
+SharePoint eSignature is now integrated with other electronic signature providers, such as Adobe Acrobat Sign and DocuSign. You can initiate requests using these other providers from PDF documents in SharePoint, while ensuring the secure and automatic storage of signed documents in Microsoft 365. Other electronic signature providers will be added in the future.
 
-## Release notes
+The providers facilitate the signing process and send out all relevant notifications. When signing is complete, a copy of the fully signed document is automatically saved in SharePoint for easy access. For more information, see [how to add other signature providers](esignature-setup.md#add-other-signature-providers) and [how to create a signature request using another provider](esignature-send-requests.md#create-a-signature-request-using-another-provider).
 
-- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions later in 2024.
+## Current release notes
 
 - SharePoint eSignature is available for only PDF documents at this time.
 
-- Support for other electronic signature providers, such as Adobe Acrobat Sign and DocuSign, will be provided in 2024.
+- Tracking of SharePoint eSignature requests through the Approvals app in Microsoft Teams is now available.
 
-- You'll be able to track your SharePoint eSignature requests using the Approvals app in Microsoft Teams in 2024.
+- Support for Adobe Acrobat Sign and Docusign is now available. In the future, there will be potential integration with other electronic signature providers.
+
+- Support for Adobe Acrobat sign and Docusign is now available globally.
 
 <br>
 

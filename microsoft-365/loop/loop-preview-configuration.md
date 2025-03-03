@@ -3,16 +3,16 @@ ms.date: 02/29/2024
 title: "Manage Loop app preview"
 ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: dancost, rekeys
-ms.author: jtremper
-author: jacktremper
-manager: dansimp
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 recommendations: true
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.service: sharepoint-online
+ms.service: loop
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: how-to
 ms.collection:
 - Strat_SP_admin
 - Microsoft 365-collaboration
@@ -45,7 +45,7 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 
 ## Configuring preview user accounts in Cloud Policy
 
-The Loop app oreview gate checks the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting:
+The Loop app preview gate checks the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting:
 
 - **Enable preview features for Loop**
 
@@ -70,5 +70,4 @@ In case you create a new policy configuration or change the configuration for an
 ## Related topics
 
 - [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
-- [Manage Loop workspace experiences in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration)
-- [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration)
+- [Loop admin policies for Loop components and Loop workspaces](/microsoft-365/loop/loop-components-configuration)

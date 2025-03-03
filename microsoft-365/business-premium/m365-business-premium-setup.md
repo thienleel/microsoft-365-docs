@@ -7,14 +7,14 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.date: 11/02/2023
+ms.service: microsoft-365-business-security
+ms.date: 06/07/2024
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
 ms.collection:
 - m365-security
-- tier1
+- tier2
 ms.custom: intro-get-started
 ---
 
@@ -22,7 +22,10 @@ ms.custom: intro-get-started
 
 This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and identify your next steps.
 
-:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted." lightbox="media/mission1.png":::
+
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](../commerce/manage-billing-accounts.md#view-my-billing-accounts).
 
 > [!TIP]
 > If you're looking for Microsoft 365 for Campaigns, see [Set up Microsoft 365 for Campaigns](m365-campaigns-setup.md).
@@ -38,7 +41,7 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
-2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
+2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
 
 3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](#set-up-microsoft-365-business-premium).
 
@@ -72,11 +75,11 @@ To complete the basic setup process, you can choose from several options availab
 
 Microsoft 365 Business Premium includes a guided setup process, as shown in the following video:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ title="Set up Microsoft 365 for business"]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de65e64a-e0d9-4f67-bc18-05d777b85e0b title="Set up Microsoft 365 for business"]
 
 ### The guided setup process, step by step
 
-1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in.
 
 2. A Business Advisor screen opens where you can select your top goals for Microsoft 365. Select and save your goals, or select **Skip for new**.
 

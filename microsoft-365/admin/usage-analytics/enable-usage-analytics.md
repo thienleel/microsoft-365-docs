@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 01/09/2024
+ms.date: 09/16/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -67,7 +67,7 @@ The data collection process completes in two to 48 hours depending on the size o
 
 ## Start the template app
 
-To start the template app, you have to be either a **global administrator**, **report reader**, **Exchange administrator**, **Skype for Business administrator**, or **SharePoint administrator**.
+To start the template app, you have to be either a **report reader**, **Exchange administrator**, **Skype for Business administrator**, or **SharePoint administrator**.
 
 1. Copy the tenant ID and select **Go to Power BI**.
 

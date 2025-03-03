@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 07/27/2023
-ms.topic: conceptual
+ms.date: 06/18/2024
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 ms.custom: admindeeplinkMAC
