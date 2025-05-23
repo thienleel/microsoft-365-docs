@@ -19,6 +19,7 @@ ms.collection:
 ms.custom:
   - admindeeplinkMAC
   - has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+  - m365-groups
 search.appverid:
 - BCS160
 - MET150

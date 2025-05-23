@@ -1,10 +1,10 @@
 ---
-title: Overview of content processing rules in Microsoft Syntex
+title: Overview of content processing rules in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 08/06/2024
+ms.date: 01/06/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -13,12 +13,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create rules to automate tasks in Microsoft Syntex.
+description: Learn how to create rules to automate tasks in SharePoint.
 ---
 
-# Overview of content processing rules in Microsoft Syntex
+# Overview of content processing rules in SharePoint
 
-Microsoft Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by models. 
+Content processing rules let you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by models.
 
    ![Diagram of the create rules workflow.](../media/content-understanding/create-rule.png)
 

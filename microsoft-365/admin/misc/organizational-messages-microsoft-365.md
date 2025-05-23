@@ -62,23 +62,30 @@ Organizational messages’ centralized experience within Microsoft 365 admin cen
 
 Before working with organizational messages, make sure your team satisfies the following requirements:
 
-- **Tenant** see [Setting tenant policies](#setting-tenant-policies).
+- **Tenant** See [Setting tenant policies](#setting-tenant-policies).
 
-- **Authors** anyone in your organization who wants to create messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
+- **Authors** Anyone in your organization who wants to create messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
 
   - [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
 
   - [Organizational Messages Writer](/azure/active-directory/roles/permissions-reference#organizational-messages-writer)
 
-- **Approvers** anyone in your organization who is designated a responsible party for approving customized messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
+- **Approvers** Anyone in your organization who is designated a responsible party for approving customized messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
 
   - [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator)
 
   - [Organizational Messages Approver](/entra/identity/role-based-access-control/permissions-reference#organizational-messages-approver)
 
-- **Message recipients** anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Microsoft Entra roles to receive organizational messages.)
+- **Message recipients** Anyone in your organization who might receive messages from your authors must have access to the Microsoft products to which the messages are configured to be delivered. (End users aren't required to have any Microsoft Entra roles to receive organizational messages.)
 
   - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 10/11 Enterprise**.
+
+- **Devices** We support Microsoft Entra ID joined devices, but not Microsoft Entra (AD) hybrid joined devices.
+
+To ensure users can communicate with organizational messages, the following endpoints must be opened:
+
+- fd.api.orgmsg.microsoft.com
+- ris.prod.api.personalization.ideas.microsoft.com
 
 > [!IMPORTANT]
 > During our preview period, Organizational messages preview experiences weren't restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, now that the product is in general availability, some organizational messages experiences are restricted to particular Microsoft licenses. To learn more, see [Advanced features](#advanced-features).
@@ -131,7 +138,7 @@ If you have the Organizational Messages Approver Microsoft Entra role as describ
 
 4. If you believe this message is appropriate for delivering to users in your tenant, you can optionally add a comment and select **Approve**.
 
-5. However, if you believe the message is not ready or appropriate for delivering to your tenant’s users, you must add a comment in the text field and select **Reject**.
+5. However, if you believe the message isn't ready or appropriate for delivering to your tenant’s users, you must add a comment in the text field and select **Reject**.
 
 ### How to overcome a rejected message (Withdraw)
 
@@ -171,12 +178,12 @@ Users with the Organizational Messages Writer Microsoft Entra role described pre
 
 - **Recipients** for setting the groups within your organization that should receive the message.
 
-- **Schedule** for configuring the start and end dates as well as the frequency with which the system will send the message to the same user over time.
+- **Schedule** for configuring the start and end dates and the frequency with which the system will send the message to the same user over time. If users don't select the message, it reappears based on the frequency set by the admin when creating organizational messages. If they do select the message, it won't reappear for a year.
 
 - **Finish** for reviewing the message before scheduling or sending for approval by your organization’s approvers.
 
 > [!NOTE]
-> To ensure tenant-based targeting, the organizational messages system might require up to 24-48 hours to establish any tenant that has not scheduled a message within the last 30 days.
+> To ensure tenant-based targeting, the organizational messages system might require up to 24-48 hours to establish any tenant that hasn't scheduled a message within the last 30 days.
 
 ### Choosing custom or premade messages
 
@@ -195,7 +202,7 @@ There are two primary forms of message creation that are enabled in this experie
 
 2. You can select **Save and close** at any point to save the message as a new draft.
 
-3. Once saved, you'll see your message at the top of the Manage table.
+3. Once saved, you can see your message at the top of the **Manage** table.
 
 4. To go back to making your message, select the draft message’s name to invoke the message details panel.
 
@@ -234,7 +241,7 @@ This advanced targeting in organizational messages can be enabled using the foll
 >
 > - For the same channel (such as Windows Spotlight), images provided by your team for the last created message will be automatically provided for your next message. However, you can override that image with a new image upload.
 > - Once you select ‘Send for approval’ at the end of a fully customized message creation flow, anyone in your tenant that has the Organizational Messages Approver Microsoft Entra role described previously will be able to review and approve/reject your message.
-> - If you save your draft before the ‘Schedule’ step and thus don't provide a custom message name, the Draft will have a programmatically generated name based on the date-time when you saved the draft. You can edit this message name by modifying the draft message.
+> - If you save your draft before the ‘Schedule’ step and thus don't provide a custom message name, the draft will have a programmatically generated name based on the date-time when you saved the draft. You can edit this message name by modifying the draft message.
 > - Not all selections in the ‘Objective’ step might have premade messages available. However, all objectives will have the “create your own’ format available for full customization authoring.
 
 ### Urgent delivery
@@ -247,7 +254,7 @@ The message creation experience for an urgent message is similar to the flow for
 - Only Microsoft Entra (formerly Azure Active Directory) group targeting can be used.
 - No Start/End dates nor frequency configurations are available as urgent messages are sent once as soon as possible.
 
-:::image type="content" source="../../media/OM-urgentMessages_annotated.png" alt-text="Screenshot that highlights the button to send an urgent message.":::
+:::image type="content" source="../../media/OM-urgentMessages_annotated.png" alt-text="Screenshot that highlights the button to send an urgent message." lightbox="../../media/OM-urgentMessages_annotated.png":::
 
 ## Review activity
 
@@ -305,7 +312,7 @@ For general availability, the advanced features in Organizational messages in Mi
 >[!NOTE]
 > If you recently onboarded your tenant to Microsoft Entra ID, it can take 36 to 64 hours before you're able to use the organizational messages features.
 
-There are certain policies that will block the delivery of organizational messages to your end users if not configured properly, such as using [Microsoft Intune](https://intune.microsoft.com). This section describes some ways to adjust all policy settings for your tenant so that delivery is allowed and works as intended.
+There are certain policies that block the delivery of organizational messages to your end users if not configured properly, such as using [Microsoft Intune](https://intune.microsoft.com). This section describes some ways to adjust all policy settings for your tenant so that delivery is allowed and works as intended.
 
 ### General Instructions
 
@@ -369,6 +376,9 @@ Further, Windows buffers messages on a set period for each of the channels. (In 
 Once your message has been actively delivering for over 24 hours, you can return to the 'Manage' experience to review the latest delivery data for your message.
 
 For urgent messages, after your message has been scheduled by the Organizational Messages platform (for example, after approval from your Organizational Messages approvers is acquired as needed), the platform will try to send the message as soon as possible. However, as noted above, this is a best-effort mechanism subject to various conditions, with no guaranteed delivery times.
+
+> [!NOTE]
+> For Windows spotlight messages, users who select a message on the Windows lock screen won't see it again for 12 months. Users who do not select the message may see it multiple times.
 
 ### My team has made other organizational messages within Intune, Adoption Score, Usage reports, and others. How do they work with this?
 
@@ -451,7 +461,7 @@ All messages have a state that indicates their creation or delivery status, incl
 
 ### How does localization work in Organizational messages?
 
-**For premade messages**, your message is delivered to end users who have their related product language set to one of the following:
+For **premade messages**, your message is delivered to end users who have their related product language set to one of the following:
 
 - en-US
 - de-DE
@@ -469,11 +479,16 @@ All messages have a state that indicates their creation or delivery status, incl
 - zh-Hans
 - zh-Hant
 
-For example, if the Organizational Messages Writer (admin) selects message A to be sent to their end users, then any end users with their product language set to one of the above languages qualifies to receive the message A.
+For example, if the Organizational Messages Writer (admin) selects "Message A" to send to end users, any end user whose preferred language matches one of the supported languages listed above will qualify to receive "Message A."
 
-**For customized messages**, your message will only be delivered in the language in which it was created within the Microsoft 365 admin center.
+> [!NOTE]
+>
+> - *Locale of the custom message writer selected*: Display language set in the Microsoft 365 admin center (MyAccount).
+> - *Locale of the message receiver selected*: First supported language listed under "Preferred Languages" in the user's Windows Settings menu. This is determined by the operating system on the user's device.
 
-For example, if the Organizational Messages Writer (admin) has their Microsoft 365 admin center product language set to French when they create their message B from scratch, end users with related product language set to English will not receive the message B. However, end users with French set as their related product language qualifies to receive the message B.
+For **custom messages**, delivery will be restricted to the language selected as the Microsoft 365 admin center (MyAccount) display language.
+
+For example, if the Organizational Messages Writer (admin) sets their Microsoft 365 admin center (MyAccount) display language to French while creating "Message B," only end users with French as the first option under "Preferred Languages" in their Windows Settings will receive "Message B." End users whose preferred language is any other language will not receive the message.
 
 ### Does Organizational Messages support government environments, such as GCC, GCCH, etc.?
 

@@ -1,5 +1,5 @@
 ---
-title: Apply a model to a document library in Microsoft Syntex
+title: Apply a document processing model to a document library in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to apply a published a model to a SharePoint document library in Microsoft Syntex.
+description: Learn how to apply a published a document processing model to a SharePoint document library.
 ---
 
-# Apply a model to a document library in Microsoft Syntex
+# Apply a document processing model to a document library in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -46,7 +46,7 @@ You can apply a model to different places, including the model home page or from
     ![Select a site.](../media/content-understanding/site-search.png)
 
     > [!NOTE]
-    > You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.
+    > You must have Manage Lists permissions or Edit rights to the document library you are applying the model to.
 
 3. After selecting the site, select the document library to which you want to apply the model. In the sample, select the *Documents* document library from the *Contoso Case Tracking* site.
 

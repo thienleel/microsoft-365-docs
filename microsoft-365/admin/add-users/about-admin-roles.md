@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -84,8 +84,9 @@ You'll probably only need to assign the following roles in your organization. By
 |Fabric admin |   Assign the Fabric admin role to users who need to do the following: <br> &bull; Manage all admin features for Microsoft Fabric and Power BI <br> &bull; Report on usage and performance <br> &bull; Review and manage auditing  |
 |Global admin     |   Giving too many users global access is a security risk and we recommend that you have as few global admins as possible. <br/><br/> Only global admins can:<br> &bull; Reset passwords for all users <br> &bull; Add and manage domains <br> &bull; Unblock another global admin <br/><br/> **Note:**   The person who signed up for Microsoft online services automatically becomes a Global admin. Additionally, only Global admins can view and manage subscriptions purchased through a Partner.|
 |Global reader    |   Assign the global reader role to users who need to view admin features and settings in admin centers that the global admin can view. The global reader admin can't edit any settings.  <br/><br/> **Note:**   For subscriptions purchased through a partner, global reader role isn't available. |
+|Graph data connect admin     |   Assign the Graph data connect admin role to users who need to do the following tasks: <br>&bull; Access the full set of administrative capabilities of Microsoft Graph Data Connect <br> &bull; Manage Microsoft Graph Data Connect settings in a tenant <br> &bull; Enable or disable the Microsoft Graph Data Connect service <br> &bull; Configure dataset workload selections in Microsoft Graph Data Connect <br> &bull; Configure cross-tenant data movement settings in Microsoft Graph Data Connect <br> &bull; View, approve, or deny application authorization requests for Microsoft Graph Data Connect <br> &bull; View, create, update, or delete application registrations for Microsoft Graph Data Connect|
 |Groups admin     |   Assign the groups admin role to users who need to manage all groups settings across admin centers, including the Microsoft 365 admin center and Microsoft Entra admin center. <br><br> Groups admins can:<br> &bull; Create, edit, delete, and restore Microsoft 365 groups<br> &bull; Create and update group creation, expiration, and naming policies<br> &bull; Create, edit, delete, and restore Microsoft Entra security groups|
-|Helpdesk admin     |   Assign the Helpdesk admin role to users who need to do the following:<br> &bull; Reset passwords<br> &bull; Force users to sign out<br> &bull; Manage service requests<br> &bull; Monitor service health<br/><br/> **Note**: The Helpdesk admin can only help non-admin users and users assigned these roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, and Reports reader.      |
+|Helpdesk admin     |   Assign the Helpdesk admin role to users who need to do the following:<br> &bull; Reset passwords <br> &bull; Force users to sign out<br> &bull; Manage service requests<br> &bull; Monitor service health<br/><br/> **Note**: The Helpdesk admin can only help non-admin users and users assigned these roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, and Reports reader.      |
 |License admin    |   Assign the License admin role to users who need to assign and remove licenses from users and edit their usage location. <br/><br/> License admins also can: <br> &bull; Reprocess license assignments for group-based licensing <br> &bull; Assign product licenses to groups for group-based licensing  |
 |Message center privacy reader    |   Assign the Message center privacy reader role to users who need to read privacy and security messages and updates in the Microsoft 365 Message center. Message center privacy readers may get email notifications related to data privacy, depending on their preferences, and they can unsubscribe using Message center preferences. Only global administrators and Message center privacy readers can read data privacy messages. This role has no permission to view, create, or manage service requests. <br><br>Message center privacy readers can also: <br> &bull; Monitor all notifications in the Message Center, including data privacy messages<br> &bull; View groups, domains, and subscriptions   |
 |Message center reader |   Assign the Message center reader role to users who need to do the following: <br> &bull; Monitor message center notifications<br> &bull; Get weekly email digests of message center posts and updates<br> &bull; Share message center posts<br> &bull; Have read-only access to Microsoft Entra services, such as users and groups|
@@ -134,18 +135,16 @@ Before the partner can assign these roles to users, you must add the partner as 
 
 ## Volume licensing roles
 
-Permissions to volume licensing information in Microsoft 365 admin center are controlled by the VL Agreement Administrators in Volume Licensing Service Center (VLSC), even for VL roles that predominantly use functionality in the Microsoft 365 admin center rather than VLSC.
+Volume licensing (VL) agreement administrators access their volume licenses in Microsoft 365 admin center.
 
-- Some volume licensing (VL) functionality is now available in Microsoft 365 admin center in a new volume licensing blade visible only to volume licensing users only.
+- VL administrators don't have permissions to any other admin center information or functionality outside the VL section.
 
-- Volume licensing users see no other Microsoft 365 admin center information or functionality.
+- Global admins don't assign any VL roles and don't need to assign any admin role to a VL administrator for them to be able to access the VL agreement.
 
-- Microsoft 365 admin center Global Admins have no role in assigning VL user permissions and do not need to assign any admin permissions to VL users for them to see the volume licensing blade.
+- Global admins don't have access to VL information or functionality in admin center, unless they are assigned a VL role by a VL administrator.
 
-- Volume licensing users must first register on the Volume Licensing Service Center (VLSC), where all roles and permissions for volume licensing functions is managed.
+- For more information, see [Manage volume licensing user roles](../../commerce/licenses/manage-user-roles-vl.md) or [contact the Volume Licensing Support team](../../commerce/licenses/contact-vl-support.md).
 
-- For more information about volume licensing in Microsoft 365 admin center, see [Frequently Asked Questions for the Volume Licensing Service Center](/licensing/vlsc-faqs-home-page) or [contact the Volume Licensing Service team](/licensing/contact-us).
-  
 ## Related content
 
 [Assign admin roles](assign-admin-roles.md) (article)\

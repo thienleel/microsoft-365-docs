@@ -31,10 +31,10 @@ In order to promote clarity in the capability descriptions on data residency fun
 |:-----|:-----|
 |Macro Region Geography |Macro Region Geography 1 – EMEA, Macro Region Geography 2 – Asia Pacific, Macro Region Geography 3 - Americas |
 |Macro Region Geography 1 - EMEA |Data centers in Austria, Finland, France, Ireland, Italy, Netherlands, Poland, Spain, Sweden <br/> <br/> **Note:** For tenants with a default geography of Israel; data can be stored in Macro Region Geography 1 – EMEA or additional datacenters located in their default geography (i.e., Israel). |
-|Macro Region Geography 2 - Asia Pacific |Data centers in Australia, Hong Kong Special Administrative Region, Japan, Malaysia, New Zealand, Singapore, South Korea <br/> <br/> **Note:** For tenants with a default geography of Taiwan; data can be stored in Macro Region Geography 2 – Asia Pacific or additional datacenters located in their default geography (i.e., Taiwan). |
+|Macro Region Geography 2 - Asia Pacific |Data centers in Australia, Hong Kong Special Administrative Region, Indonesia, Japan, Malaysia, New Zealand, Singapore, South Korea <br/> <br/> **Note:** For tenants with a default geography of Taiwan; data can be stored in Macro Region Geography 2 – Asia Pacific or additional datacenters located in their default geography (i.e., Taiwan). |
 |Macro Region Geography 3 - Americas |Data centers in Brazil, Chile, Mexico, United States |
-|Local Region Geography |Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, United Kingdom |
-|Future Local Region Geography | Future planned data center regions: Indonesia, Malaysia, Austria, Chile, Denmark, Greece, Saudi Arabia |
+|Local Region Geography |Australia, Brazil, Canada, France, Germany, India, Indonesia, Israel, Italy, Japan, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, United Kingdom |
+|Future Local Region Geography | Future planned data center regions: Malaysia, Austria, Chile, Denmark, Greece, Saudi Arabia |
 |Geography |_Local Region Geography, Future Local Region Geography_, or _Macro Region Geography_ |
 |Satellite Geography |If a customer subscribes to the Multi Geo service, then they can set policy at a user level to store customer data in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_ |
 |Microsoft Entra ID |Microsoft Entra ID is the new name for [Azure Active Directory](/entra/fundamentals/new-name) |
@@ -75,15 +75,15 @@ You can use the Microsoft 365 admin center to understand where your data for a g
 
 Some examples:
 
-**Example 1:** For a _Tenant_ with the sign-up country/region as "France" that has a new subscription that includes Exchange Online, SharePoint, OneDrive and Microsoft Teams, then the customer data for those services will be provisioned into the French _Local Region Geography_. Why? Because those services are deployed into the French data centers and the _Tenant_ has a France sign up country/region.
+**Example 1:** For a _Commercial Tenant_ with the sign-up country/region as "France" that has a new subscription that includes Exchange Online, SharePoint, OneDrive and Microsoft Teams, then the customer data for those services will be provisioned into the French _Local Region Geography_. Why? Because those services are deployed into the French data centers and the _Tenant_ has a France sign up country/region.
 
-**Example 2:** For a _Tenant_ with the sign-up country/region as "Belgium" that has a new subscription that includes Exchange Online, SharePoint, OneDrive and Microsoft Teams, then the customer data for those services will be provisioned into the _Macro Region Geography 1 – EMEA_. Why? Because there are no Microsoft 365 data centers in Belgium and the closest Geography is _Macro Region Geography 1 - EMEA_.
+**Example 2:** For a _Commercial Tenant_ with the sign-up country/region as "Belgium" that has a new subscription that includes Exchange Online, SharePoint, OneDrive and Microsoft Teams, then the customer data for those services will be provisioned into the _Macro Region Geography 1 – EMEA_. Why? Because there are no Microsoft 365 data centers in Belgium and the closest Geography is _Macro Region Geography 1 - EMEA_.
 
-**Example 3:** For a _Tenant_ with the sign-up country/region as "Japan" that has a new subscription that includes Microsoft Forms, then the customer data for Forms will be provisioned into the _Macro Region Geography 3 - Americas_. Why? Because Forms is only deployed in _Macro Region Geography 3 - Americas_ and _Macro Region Geography 1 – EMEA_ (EU _Tenants_ only).
+**Example 3:** For a _Commercial Tenant_ with the sign-up country/region as "Japan" that has a new subscription that includes Microsoft Forms, then the customer data for Forms will be provisioned into the _Macro Region Geography 3 - Americas_. Why? Because Forms is only deployed in _Macro Region Geography 3 - Americas_ and _Macro Region Geography 1 – EMEA_ (EU _Tenants_ only).
 
-**Example 4a:** For a _Tenant_ with the sign-up country/region as "Sweden" that has a new subscription that includes Microsoft Viva Engage, then the customer data for Viva Engage will be provisioned into the _Macro Region Geography 1 - EMEA_. Why? Because Viva Engage is deployed in _Macro Region Geography 1 - EMEA_ and Swedish _Tenants_ are best served out of that _Geography_.
+**Example 4a:** For a _Commercial Tenant_ with the sign-up country/region as "Sweden" that has a new subscription that includes Microsoft Viva Engage, then the customer data for Viva Engage will be provisioned into the _Macro Region Geography 1 - EMEA_. Why? Because Viva Engage is deployed in _Macro Region Geography 1 - EMEA_ and Swedish _Tenants_ are best served out of that _Geography_.
 
-**Example 4b:** For a _Tenant_ with the sign-up country/region as "Sweden" that has a subscription that includes Microsoft Viva Engage from before Viva Engage was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Viva Engage will be located in _Macro Region Geography 3 - Americas_. Why? Because, at that time, Viva Engage only had a single deployment for all customers in _Macro Region Geography 3 - Americas_.
+**Example 4b:** For a _Commercial Tenant_ with the sign-up country/region as "Sweden" that has a subscription that includes Microsoft Viva Engage from before Viva Engage was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Viva Engage will be located in _Macro Region Geography 3 - Americas_. Why? Because, at that time, Viva Engage only had a single deployment for all customers in _Macro Region Geography 3 - Americas_.
 
 ### Migrations/Moves
 
@@ -259,7 +259,7 @@ Microsoft 365 uses service-side technologies that encrypt customer data at rest 
 
 <details><summary>Select to expand</summary>
 
-Review the [Products available by region](https://go.microsoft.com/fwlink/p/?linkid=2093451) page to find data residency information for Microsoft Azure.
+Review the [Product availability by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table) page to find data residency information for Microsoft Azure.
 
 </details>
 

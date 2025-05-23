@@ -1,10 +1,10 @@
 ---
-title: Comment and collaborate using annotations in Microsoft Syntex
+title: Comment and collaborate using annotations in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 08/01/2024
+ms.date: 03/18/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use universal annotations to mark and collaborate on items in SharePoint document libraries using Microsoft Syntex.
+description: Learn how to use universal annotations to mark and collaborate on items in SharePoint document libraries.
 ---
 
-# Comment and collaborate using annotations in Microsoft Syntex
+# Comment and collaborate using annotations in SharePoint
 
 
 :::row:::

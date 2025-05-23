@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv    
-ms.reviewer: roryh, racheg
+ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to manage volume licensing user roles in the Microsoft 365 admin center."
-ms.date: 02/21/2025
+ms.date: 03/28/2025
 ---
 
 # Manage volume licensing user roles
@@ -197,4 +197,4 @@ To view or change your opt-in preferences, use the following steps.
 
 ## Contact support
 
-Submit a case in the admin center by going to <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contacting volume licensing support](/licensing/contact-us).
+Submit a case in the admin center by going to <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).

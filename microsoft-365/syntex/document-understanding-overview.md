@@ -1,5 +1,5 @@
 ---
-title: Overview of unstructured document processing in Microsoft Syntex
+title: Overview of unstructured document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -15,16 +15,16 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the unstructured document processing model in Microsoft Syntex.
+description: Learn about the unstructured document processing model in SharePoint.
 ---
 
-# Overview of unstructured document processing in Microsoft Syntex
+# Overview of unstructured document processing in SharePoint
 
 > [!NOTE]
 > As of March 1, 2025, the price for unstructured document processing is lowered from $0.05 per page to $0.005 per page.
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of unstructured document processing and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of unstructured document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 <!---</br>
 
@@ -39,7 +39,7 @@ Use the unstructured document processing model ([teaching method](create-syntex-
 
 ## Introduction to unstructured models
 
-The unstructured document processing model (formerly known as *document understanding model*) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
+The unstructured document processing model uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
 > For more information about how to use Syntex and scenario examples, see [Get started driving adoption of Microsoft Syntex](./adoption-getstarted.md) and [Scenarios and use cases for Microsoft Syntex](./adoption-scenarios.md).

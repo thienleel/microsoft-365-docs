@@ -311,7 +311,7 @@ Set-MgUserLicense -UserId $user.Id -AddLicenses @{SkuId = $EmsSku.SkuId} -Remove
 ```
 
 > [!TIP]
-> The `usageLocation` is A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. Examples include: US, JP, and GB.
+> The `usageLocation` is A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries/regions. Examples include: US, JP, and GB.
 
 This example creates a new user account for Elizabeth Brunner with the following values:
 

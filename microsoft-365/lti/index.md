@@ -1,13 +1,14 @@
 ---
 title: An overview of Microsoft LTI apps
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
 ms.topic: concept-article
-ms.service: microsoft-365-enterprise
+ms.service: msteams
+ms.subservice: teams-education
 search.appverid: 
 ms.collection: 
 - M365-modern-desktop
@@ -31,6 +32,11 @@ These tools include:
 - [Microsoft Reflect LTI](#microsoft-reflect-lti)
 
 For general information on managing Microsoft LTI apps, see [Manage Microsoft LTI apps for any LMS](manage-microsoft-one-lti.md).
+
+> [!IMPORTANT]
+> We're streamlining the LTI® (Learning Tools Interoperability) experiences for education customers who may be using different LMS systems. We're simplifying onboarding and usage by consolidating the capabilities of multiple LTI tools available today into fewer and more functional tools.
+>
+> The capabilities of the Teams Classes LTI and Meetings LTI tools are among the first tools updated in this consolidation. Microsoft is announcing the end of support for the Teams Classes LTI and Meetings LTI tools on September 15, 2025, as their capabilities will be superseded by a new, unified experience. Release details for the unified experience are forthcoming.
 
 ## OneDrive LTI apps
 
@@ -80,6 +86,7 @@ The integration allows you to Connect Class Teams and add Teams Assignments righ
 - [Microsoft Assignments integration with Schoology Learning](teams-assignments-with-schoology.md).
 - [Microsoft Assignments integration with Blackboard](teams-assignments-with-blackboard.md).
 - [Microsoft Assignments integration with Desire2Learn Brightspace](teams-assignments-with-brightspace.md).
+- [Microsoft Assignments integration with any LTI 1.3 compliant LMS](teams-assignments-with-other-lms.md).
 
 More LMS support coming soon! Please sign up for more information on current and future LMS integration previews at https://aka.ms/LMSPreview
 

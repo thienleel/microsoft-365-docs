@@ -1,11 +1,11 @@
 ---
-title: Overview of taxonomy tagging in Microsoft Syntex
+title: Overview of taxonomy tagging in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 01/16/2025
+ms.date: 03/03/2025
 ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -15,15 +15,15 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn about taxonomy tagging in Microsoft Syntex.
+description: Learn about taxonomy tagging in SharePoint.
 ---
 
-# Overview of taxonomy tagging in Microsoft Syntex
+# Overview of taxonomy tagging in SharePoint
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of taxonomy tagging and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of taxonomy tagging and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
-Microsoft Syntex gives you the ability to automatically tag documents in SharePoint libraries with terms configured in your term store using AI. These terms are stored in a managed metadata column (also known as a taxonomy column) on the item, making the documents easier to search, sort, filter, and manage.
+Taxonomy tagging gives you the ability to automatically tag documents in SharePoint libraries with terms configured in your term store using AI. These terms are stored in a managed metadata column (also known as a taxonomy column) on the item, making the documents easier to search, sort, filter, and manage.
 
 The taxonomy tagging feature offers an automated tagging solution for documents stored in document libraries. This straightforward, no-training option eliminates the need for users to manually tag documents or build and train sophisticated AI models to tag basic terms. This feature is beneficial if you want to quickly search for and locate documents in your libraries or set up any subsequent processes based on the tags attached to files.
 
@@ -35,7 +35,7 @@ The taxonomy tagging feature offers an automated tagging solution for documents 
 
 ### Current release notes
 
-- A maximum of three columns in a library can be configured with taxonomy tagging.
+- A maximum of five columns in a library can be configured with taxonomy tagging.
 
 - Taxonomy tagging doesn't work on scanned PDF files at this time. It only works on regular (native) PDF files.
 

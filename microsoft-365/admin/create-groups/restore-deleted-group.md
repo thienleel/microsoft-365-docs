@@ -19,6 +19,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- m365-groups
 search.appverid:
 - BCS160
 - MET150

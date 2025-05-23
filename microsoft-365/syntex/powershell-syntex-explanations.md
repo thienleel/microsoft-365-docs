@@ -3,7 +3,7 @@ title: Work with explanations for unstructured document processing models in Pow
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-ms.date: 07/06/2023
+ms.date: 04/06/2025
 manager: ssquires
 audience: admin
 ms.topic: reference
@@ -21,13 +21,13 @@ description: Learn about work with Microsoft Syntex model explanations in PowerS
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 > [!IMPORTANT]
-> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There's no service-level agreement (SLA) for open-source tool support from official Microsoft support channels.
 
 Custom explanation templates are stored in a list within a content center. Because these explanations are stored as list items, PowerShell can be used to interact with them.
 
 ## List saved explanations
 
-This example shows how to view all of the custom explanation templates that have been saved on a specific content center.
+This example shows how to view all of the custom explanation templates that are saved on a specific content center.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -131,7 +131,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## Create a phrase list explanation based on a term set
 
-This example shows how to create a custom phrase list explanation template by taking the values from a term set. This includes the preferred term names and any synonyms.
+This example shows how to create a custom phrase list explanation template by taking the values from a term set. This example includes the preferred term names and any synonyms.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"

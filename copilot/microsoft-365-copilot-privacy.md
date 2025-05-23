@@ -3,7 +3,7 @@ title: "Data, Privacy, and Security for Microsoft 365 Copilot"
 description: "Learn how Microsoft 365 Copilot uses data and how it stores and protects that data."
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: high
@@ -12,8 +12,9 @@ ms.collection:
 - privacy-copilot
 - m365copilot
 - magic-ai-copilot
+- must-keep
 hideEdit: true
-ms.date: 01/15/2025
+ms.date: 05/02/2025
 ms.custom: [copilot-learning-hub]
 ---
 
@@ -185,7 +186,7 @@ Yes, Microsoft 365 Copilot provides detection for protected materials, which inc
 
 ### Does Copilot block prompt injections (jailbreak attacks)?
 
-[Jailbreak attacks](/azure/ai-services/openai/whats-new#responsible-ai) are user prompts that are designed to provoke the generative AI model into behaving in ways it was trained not to or breaking the rules it's been told to follow. Microsoft 365 Copilot is designed to protect against prompt injection attacks. [Learn more about jailbreak attacks and how to use Azure AI Content Safety to detect them](/azure/ai-services/content-safety/concepts/jailbreak-detection).
+Jailbreak attacks are prompts designed to bypass Copilot's safeguards or induce non-compliant behavior. Microsoft 365 Copilot helps mitigate these attacks by using proprietary jailbreak and cross-prompt injection attack (XPIA) classifiers. These classifiers analyze inputs to the Copilot service and help block high-risk prompts prior to model execution.
 
 ### Committed to responsible AI
 

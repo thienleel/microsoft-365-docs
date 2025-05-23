@@ -3,7 +3,7 @@ title: "Download volume licensing products"
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: racheg, ronarg
+ms.reviewer: aasthatiwari, atuldubey
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
@@ -17,7 +17,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn about volume licensing downloads in the Microsoft 365 admin center."
-ms.date: 11/07/2024
+ms.date: 03/28/2025
 ---
 
 # Download volume licensing products
@@ -162,7 +162,7 @@ Alternatively, you can [create a Microsoft technical support case](https://suppo
 
 Volume Licensing Services can help you navigate the VL experience in Microsoft 365 admin center, and confirm the availability of specific download files in the VL catalog.
 
-Submit a case in the admin center by going to <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contacting volume licensing support](/licensing/contact-us).
+Submit a case in the admin center by going to <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 > [!TIP]
 > Creating your support case online before your phone support is faster, because your contact information is captured upfront and you immediately receive a case number to give to our support team when you call.

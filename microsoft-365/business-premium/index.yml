@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Business Premium resources # < 60 chars
-summary: For businesses with up to 300 employees, Microsoft 365 Business Premium enables you to be productive anywhere with Microsoft 365 apps and online meetings. Secure your business with advanced security features, and streamline your IT setup and management with a single solution. # < 160 chars
+summary: For businesses with up to 300 users, Microsoft 365 Business Premium enables you to be productive anywhere with Microsoft 365 apps and online meetings. Secure your business with advanced security features, and streamline your IT setup and management with a single solution. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -12,13 +12,14 @@ metadata:
   ms.topic: hub-page # Required
   ms.collection:
   - tier2
+  - essentials-navigation
   ms.custom:
   - AdminSurgePortfolio
   - intro-hub-or-landing
   author: chrisda #Required; your GitHub user alias, with correct capitalization.
   ms.author: chrisda #Required; microsoft alias of author; optional team alias.
   ms.reviewer: nehabha
-  ms.date: 05/31/2024
+  ms.date: 05/07/2025
 
 # productDirectory section (optional)
 productDirectory:
@@ -28,7 +29,7 @@ productDirectory:
     - title: Watch
       imageSrc: /office/media/icons/video-play.svg
       summary: Top five benefits of Microsoft 365 Business Premium.
-      url: https://aka.ms/M365BPvideo
+      url: https://youtu.be/njXOcmncBcg
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
@@ -118,7 +119,7 @@ conceptualContent:
           text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
         - url: https://aka.ms/M365MDBseries
           itemType: video
-          text: Join the partner webinar series!
+          text: Join the partner webinar series
         - url: https://partner.microsoft.com
           itemType: overview
           text: Microsoft Partner Network

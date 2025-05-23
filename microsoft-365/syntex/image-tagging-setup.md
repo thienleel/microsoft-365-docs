@@ -1,5 +1,5 @@
 ---
-title: Set up and manage enhanced image tagging in Microsoft Syntex
+title: Set up and manage enhanced image tagging in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,9 +18,9 @@ ms.localizationpriority:  medium
 description: Learn how to set and configure enhanced image tagging in SharePoint.
 ---
 
-# Set up and manage enhanced image tagging in Microsoft Syntex
+# Set up and manage enhanced image tagging in SharePoint
 
-The image tagging service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+Image tagging is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 

@@ -3,7 +3,7 @@ title: Use PowerShell to request processing by a custom model
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-ms.date: 07/06/2023
+ms.date: 04/06/2025
 manager: ssquires
 audience: admin
 ms.topic: reference
@@ -21,11 +21,11 @@ description: Learn how to use PowerShell to request processing by a Microsoft Sy
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 > [!IMPORTANT]
-> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There's no service-level agreement (SLA) for open-source tool support from official Microsoft support channels.
 
-Custom models will process newly uploaded files to a library. It's also possible to manually request processing in the UI. However there might be scenarios where it's more efficient to trigger processing through PowerShell.
+Custom models process newly uploaded files to a library. It's also possible to manually request processing in the UI. However there might be scenarios where it's more efficient to trigger processing through PowerShell.
 
-## Request processing of all items that haven't been previously classified
+## Request processing of all items not previously classified
 
 You can request processing for all items in the library that haven't previously been classified by using this command:
 
@@ -36,7 +36,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-For lower priority processing, you might also consider using the -OffPeak parameter, which will queue files for processing outside of business hours where your tenant is located. For more information, see [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html).
+For lower priority processing, you might also consider using the -OffPeak parameter, which queues files for processing outside of business hours where your tenant is located. For more information, see [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html).
 
 ## Request processing of all items in a library
 
@@ -50,7 +50,7 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 ```
 
 > [!NOTE]
-> Using the -Force option with more than 5000 items will automatically enable off peak processing.
+> Using the -Force option with more than 5,000 items automatically enables off-peak processing.
 
 ## Request processing of all items based on a property
 

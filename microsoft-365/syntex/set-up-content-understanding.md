@@ -3,7 +3,7 @@ title: Assign existing Microsoft Syntex per-user licenses
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
-ms.date: 06/20/2024
+ms.date: 02/20/2025
 manager: jtremper
 audience: admin
 ms.topic: how-to

@@ -3,7 +3,7 @@ title: Publish custom models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-ms.date: 07/06/2023
+ms.date: 04/06/2025
 manager: ssquires
 audience: admin
 ms.topic: reference
@@ -21,13 +21,13 @@ description: Learn how to publish Microsoft Syntex custom models by using PowerS
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 > [!IMPORTANT]
-> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There's no service-level agreement (SLA) for open-source tool support from official Microsoft support channels.
 
-Syntex models typically are deployed to document libraries across your tenant. This can be done by using the content center site, but this can also be done using [PnP PowerShell](https://pnp.github.io/powershell/) as explained in this article.
+Microsoft Syntex models typically are deployed to document libraries across your tenant. This action can be done by using the content center site, but it can also be done using [PnP PowerShell](https://pnp.github.io/powershell/) as explained in this article.
 
 ## Listing the available models in a content center
 
-To get an overview of the models added to the current Syntex content center site, use the [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) cmdlet:
+To get an overview of the models added to the current Microsoft Syntex content center site, use the [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) cmdlet:
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -45,7 +45,7 @@ Publish-PnPSyntexModel -Model "Contract Notice" -ListWebUrl "https://contoso.sha
 
 ## Understanding where a model is used
 
-Once you've deployed a model to many libraries, you might want to review the list of libraries using your model. This can be done using the [Get-PnPSyntexModelPublication](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModelPublication.html) cmdlet:
+Once you deploy a model to many libraries, you might want to review the list of libraries using your model. This action can be done using the [Get-PnPSyntexModelPublication](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModelPublication.html) cmdlet:
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -72,7 +72,7 @@ Contract Notice,https://contoso.sharepoint.com/sites/Site1,/sites/Site1,/sites/s
 Trade Confirmation,https://contoso.sharepoint.com/sites/Site2,/sites/Site2,/sites/site2/shared%20documents
 ```
 
-This CSV file can then be used as an input into a script that will publish the listed models to the appropriate libraries. In the following example, batching is used to increase the efficiency of the requests.
+This CSV file can then be used as an input into a script that publishes the listed models to the appropriate libraries. In the following example, batching is used to increase the efficiency of the requests.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourSite"

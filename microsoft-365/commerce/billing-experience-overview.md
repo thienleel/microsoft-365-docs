@@ -26,7 +26,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX NOFOLLOW
 description: "Learn about the new billing experience for business subscription in the Microsoft 365 admin center."
-ms.date: 09/19/2024
+ms.date: 04/30/2025
 ---
 
 # Overview of the new Microsoft billing experience for business subscriptions
@@ -49,7 +49,7 @@ For more information, see [Understand your Microsoft business billing account](m
 
 ## Billing profiles
 
-You also now have a *billing profile* associated with your billing account. A billing profile contains payment method and invoice information and is used to pay for the products that you buy from us. If you have more than one billing profile, each billing profile is invoiced separately.
+You also now have a *billing profile* associated with your billing account. A billing profile contains payment method and invoice information and is used to pay for the products that you buy from us. Each billing profile is invoiced separately for changes to your seat based subscription or any usage you may have for your consumption based subscriptions.  All purchases, recurring charges, and renewals are invoiced on the day of the month the subscription was purchased.
 
 Like billing accounts, billing profiles also have special roles that you can assign to users in your organization. These roles let users do things like assign billing profile roles, edit the billing profile group, use the billing profile in a purchase, pay bills, and view the billing profile group.
 

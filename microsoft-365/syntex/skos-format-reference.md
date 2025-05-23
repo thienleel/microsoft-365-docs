@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 10/14/2024
+ms.date: 03/14/2025
 audience: admin
 ms.topic: reference
 ms.service: microsoft-syntex
@@ -131,7 +131,7 @@ Use this property to map a [Term](/dotnet/api/microsoft.sharepoint.client.taxono
 
 ## Required labels
 
-Your organization may want to do careful planning before you start to use managed metadata. The amount of planning that you must do depends on how formal your taxonomy is. It also depends on how much control that you want to impose on metadata. At each level of the hierarchy, you need to configure required labels for a Term or TermSet.
+Your organization might want to do careful planning before you start to use managed metadata. The amount of planning that you must do depends on how formal your taxonomy is. It also depends on how much control that you want to impose on metadata. At each level of the hierarchy, you need to configure required labels for a Term or TermSet.
 
 A Term can have one or more labels in the default language, and zero or more labels in the nondefault language. If the term has labels in a language, one of the labels must be the default label.
 

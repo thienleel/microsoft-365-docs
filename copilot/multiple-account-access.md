@@ -1,9 +1,9 @@
 ---
 title: "Multiple account access to Copilot for work and school documents"
 description: "Learn about multiple account access to Copilot for work and school documents."
-ms.author: danbrown
-author: DHB-MSFT
-manager: laurawi
+ms.author: camillepack
+author: camillepack
+manager: scotv
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
@@ -12,22 +12,27 @@ ms.collection:
 - privacy-copilot
 - m365copilot
 - magic-ai-copilot
+- must-keep
 hideEdit: true
-ms.date: 01/30/2025
+ms.date: 05/14/2025
 ---
 
 # Multiple account access to Copilot for work and school documents
 
-> [!NOTE]
-> - Multiple account access to Copilot is currently disabled for all work and school documents. 
-> - Multiple account access to Copilot will be enabled in March 2025 at the earliest.
-> - In the meantime, there's a policy setting to turn it off ahead of time. For more information, see [Manage multiple account access to Copilot using Cloud Policy](#manage-multiple-account-access-to-copilot-using-cloud-policy).
+> [!IMPORTANT]
+> - As of March 19, 2025, multiple account access to Copilot is available for some apps on specific types of devices. For more information, see [Apps where multiple account access to Copilot is available](#apps-where-multiple-account-access-to-copilot-is-available).
+> - For information about turning off multiple account access by using a policy setting, see [Manage multiple account access to Copilot using Cloud Policy](#manage-multiple-account-access-to-copilot-using-cloud-policy).
 
 ## What is multiple account access to Copilot?
 
-In Microsoft 365 apps that support signing in with multiple accounts (Word, Excel, PowerPoint, Outlook, and OneNote desktop and mobile apps), users can use their Copilot access from one account on documents from a different account.
+In Microsoft 365 apps that support signing in with multiple accounts (desktop versions and mobile versions, if available, of Word, Excel, PowerPoint, Outlook, and OneNote), users can use their Copilot access from one account on documents from a different account.
 
-Multiple account access to Copilot is currently disabled, but once enabled, your users may use Copilot on work documents without a Copilot license assigned from your organization.  
+This means that when multiple account access to Copilot is enabled, your users can use Copilot on work documents without a Copilot license assigned from your organization.
+
+When multiple account access to Copilot is disabled, if the user only has access to Copilot through an account outside of your organization, such as from a personal Microsoft 365 subscription, they can’t use Copilot on work or school documents.
+
+> [!NOTE]
+> Multiple account access to Copilot is always disabled for the following customers: Microsoft 365 GCC (Government Community Cloud), Microsoft 365 GCC High, Microsoft 365 DoD, and Microsoft 365 operated by 21Vianet.
 
 ## Data protection
 
@@ -36,12 +41,6 @@ Copilot data protection is always based on the identity used to access the file.
 The setting for [web grounding in Copilot](manage-public-web-access.md) is also based on the identity used to access the file. If you disable web grounding in Copilot for a user in your organization, that user isn't able to use web grounding even when using Copilot access from another account.
 
 Users using multiple account access to Copilot on work and school documents also have limited access to Copilot as shown in the following table.
-
-> [!NOTE]
-> - The following table shows the Copilot capabilities available to your users when multiple account access is enabled.
-> - As noted at the top of this article, multiple account access is currently disabled for all organizations for all work and school documents.
-> - When multiple account access is disabled, if your user only has access to Copilot through an account outside of your organization, such as from a personal Microsoft 365 subscription, they can’t use Copilot on work or school documents.
-
 
 | Copilot capability                                                                          | When multiple account access to Copilot is enabled | When the user has been assigned an internal Microsoft 365 Copilot license |
 |---------------------------------------------------------------------------------------------|------------------------------------|----------------------------------------|
@@ -55,11 +54,11 @@ Users using multiple account access to Copilot on work and school documents also
 
 You can use the "Multiple account access to Copilot for work documents" policy setting to control whether your users can use multiple account access to Copilot on work and school documents. This policy only applies to Microsoft 365 apps that allow signing in with multiple accounts (Word, Excel, PowerPoint, Outlook, and OneNote desktop and mobile apps).
 
-To configure this policy setting, you can use [Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy).
+To configure this policy setting, you need to use [Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy).
 
 > [!NOTE]
 > - The policy setting is available in Cloud Policy as of January 30, 2025.
-> - Currently the policy setting is only available in English. But we’re working on making the localized versions available as soon as we can.
+> - Microsoft 365 GCC customers can see the policy setting in Cloud Policy, but the policy has no effect on them because multiple account access to Copilot is always disabled for Microsoft 365 GCC customers.
 
 If you enable or don't configure this policy setting, your users can use Copilot on work and school documents with a Copilot license that is from outside your organization.
 
@@ -67,6 +66,43 @@ If you disable this policy setting, your users can't use Copilot on work and sch
 
 The end-user experience for blocked users viewing work and school documents is as follows:
 
-- All on-canvas Copilot UX is removed, both on-canvas Copilot entry points and proactive features like Word summary.
+- All on-canvas Copilot UX is removed, both on-canvas Copilot entry points and proactive features, such as Word summary.
 
 - If the user is signed in with an account with Copilot, the Copilot button in the ribbon remains active. However, your users can't use any Copilot capabilities; clicking the button displays an error message indicating that multiple account access to Copilot is blocked.
+
+## Apps where multiple account access to Copilot is available
+
+As of May 14, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
+
+### On Android devices
+
+- Outlook: Version 4.2511.0
+- PowerPoint: Version 16.0.18623.20090
+
+### On iOS devices
+
+- OneNote: Version 16.96 (25040710)
+- Outlook: Version 4.2511.0
+- PowerPoint: Version 2.95.25030623
+- Word: Version 2.95.305.0
+
+### On iPad devices
+
+- Excel: Version 2.95.224.0
+- PowerPoint: Version 2.95.224.0
+
+### On Mac devices
+
+- Excel: Version 16.95
+- OneNote: Version 16.96
+- Outlook: Version 16.95.303.0
+- PowerPoint: Version 16.95
+- Word: Version 16.95.3
+
+### On Windows devices
+
+- Excel: Version 2503
+- OneNote: Version 2504
+- Outlook (new): Version 20250320055
+- PowerPoint: Version 2503
+- Word: Version 2503

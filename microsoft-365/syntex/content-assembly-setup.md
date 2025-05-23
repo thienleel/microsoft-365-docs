@@ -1,5 +1,5 @@
 ---
-title: Set up and manage content assembly in Microsoft Syntex
+title: Set up and manage content assembly in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -17,9 +17,9 @@ ms.localizationpriority:  medium
 description: Learn to create set up and manage content assembly in SharePoint.
 ---
 
-# Set up and manage content assembly in Microsoft Syntex
+# Set up and manage content assembly in SharePoint
 
-The content assembly service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+Content assembly is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 

@@ -23,7 +23,7 @@ ms.custom:
 search.appverid: MET150
 robots: NOINDEX NOFOLLOW
 description: "Learn about cloud subscriptions and how to view them in the Microsoft 365 admin center."
-ms.date: 12/18/2024
+ms.date: 05/02/2025
 ---
 
 # What are cloud subscriptions?

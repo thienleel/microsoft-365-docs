@@ -1,5 +1,5 @@
 ---
-title: Set up and manage autofill columns in Microsoft Syntex
+title: Set up and manage autofill columns in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -17,9 +17,9 @@ ms.localizationpriority:  medium
 description: Learn how to set up and manage sites for autofill columns in SharePoint.
 ---
 
-# Set up and manage autofill columns in Microsoft Syntex
+# Set up and manage autofill columns in SharePoint
 
-The autofill columns service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+Autofill columns is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 

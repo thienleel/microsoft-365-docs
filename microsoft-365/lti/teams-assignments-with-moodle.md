@@ -1,12 +1,13 @@
 ---
 title: Integrate Teams Assignments with Moodle
 description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Moodle.
-author: jennplatt
-ms.author: avering
+author: DaniEASmith
+ms.author: danismith
 manager: mimast
 ms.date: 02/12/2025
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: msteams
+ms.subservice: teams-education
 ---
 
 # Use Teams Assignments LTI with Moodle™
@@ -24,7 +25,7 @@ By installing and using the Teams Assignments LTI app, educators and students ca
 
 **To register the application in the Microsoft registration portal:**
 
-1. Sign in with a Microsoft 365 administrator account to the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration).
+1. Sign in with a Microsoft 365 Education account to the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration).
 1. Select **Add new registration**.
 1. Select **Microsoft Teams Assignments** and then select **Next**.
 1. Enter a friendly **Registration** name like "Teams Assignments for Moodle" and select **Moodle** as the LMS platform. Select **Next**.
@@ -53,7 +54,8 @@ By installing and using the Teams Assignments LTI app, educators and students ca
 
 **To save the values obtained from Moodle into the Microsoft registration portal:**
 
-1. On the Microsoft registration portal tab, select **Next** to navigate to LMS provided registration keys. Enter the values listed in the table:
+1. On the Microsoft registration portal tab, select **Next** to navigate to LMS provided registration keys. Enter the values listed in the table:
+
 
     | Field in Microsoft registration portal | Value                                                      |
     |----------------------------------------|------------------------------------------------------------|

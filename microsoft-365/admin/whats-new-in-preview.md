@@ -2,10 +2,10 @@
 title: "What's new in the Microsoft 365 admin center?"
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekuako
+ms.author: camillepack
+author: camillepack
 manager: scotv
-ms.date: 02/05/2024
+ms.date: 03/04/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -44,12 +44,40 @@ And if you'd like to know what's new with other Microsoft cloud services, check 
 - [What's new in Microsoft Entra ID](/azure/active-directory/fundamentals/whats-new)
 - [What's new in the Exchange admin center](/Exchange/whats-new)
 - [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [What's new in the Microsoft Purview compliance portal](/microsoft-365/compliance/whats-new)
+- [What's new in the Microsoft Purview portal](/microsoft-365/compliance/whats-new)
 - [What's new in Microsoft Defender XDR](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [What's new for Teams admins](/OfficeUpdates/teams-admin)
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
+
+## April 2025
+
+### Microsoft 365 Copilot network connectivity test
+
+A new addition to the Microsoft 365 network connectivity test tool enables users to run diagnostics specifically for Microsoft 365 Copilot. The tool helps users evaluate the network performance between their device and Microsoft 365 endpoints, specifically for Microsoft 365 Copilot. It runs a series of tests from the user’s location and generates a detailed report that can be shared with others or Microsoft support to help troubleshoot connectivity issues.
+
+The test includes:
+
+- **Latency** measures the time it takes for data to travel between the device and Microsoft 365 services
+- **Throughput** evaluates the data transfer rate
+- **Service reachability** checks whether required Microsoft 365 services are accessible
+
+Admins and users can go to [Microsoft 365 network connectivity test](https://connectivity.m365.cloud.microsoft/) to run the test.
+
+To learn more, see [Microsoft 365 network connectivity test tool](/microsoft-365//enterprise/office-365-network-mac-perf-onboarding-tool).
+
+## March 2025
+
+### Exchange Web Services usage report
+
+:::image type="content" source="../media/exchange-web-usage-report.png" alt-text="Screenshot showing the line chart for the Exchange web usage report." lightbox="../media/exchange-web-usage-report.png":::
+
+The Microsoft 365 admin center now includes a new Exchange Web Services (EWS) usage report that provides insights into the non-Microsoft (third-party) applications in your tenant that use EWS. The report provides detailed information on the specific actions performed by these applications and their call volumes over a selected period. The report enhances your ability to understand EWS activity prior to EWS deprecation in Microsoft Exchange Online.
+
+The report is available by default in the Microsoft 365 admin center under **Reports** > **Usage** > **Exchange** > **EWS usage**.
+
+To learn more, see [Microsoft 365 Reports in the admin center – EWS usage](/microsoft-365/admin/activity-reports/ews-usage).
 
 ## February 2025
 

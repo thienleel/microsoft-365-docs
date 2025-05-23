@@ -1,10 +1,10 @@
 ---
-title: Translate a document in Microsoft Syntex
+title: Translate a document in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/23/2025
+ms.date: 04/03/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -14,12 +14,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to translate documents using Microsoft Syntex.
+description: Learn how to translate documents using SharePoint.
 ---
 
-# Translate a document in Microsoft Syntex
+# Translate a document in SharePoint
 
-Translation in Microsoft Syntex lets you create a translated copy of a file manually on demand or automatically by using rules. You can set a rule to create a translated copy automatically when a document is created, or when data in a column is modified.​
+Document translation lets you create a translated copy of a file manually on demand or automatically by using rules. You can set a rule to create a translated copy automatically when a document is created, or when data in a column is modified.​
 
 When a file is translated, the file name of the translated copy is appended to show the ISO code for the language.
 
@@ -66,3 +66,25 @@ You can create a rule to automatically translate a document [when a new file is 
 ## Translate a video transcript
 
 To create a translated version of a video transcript or closed captioning, see [How to translate transcripts in Stream for SharePoint](https://support.microsoft.com/office/microsoft-syntex-pay-as-you-go-transcript-translations-in-stream-for-sharepoint-2e34ad1b-e213-47ed-a806-5cc0d88751de#bkmk_howtotranslate).
+
+## Give feedback on translated documents
+
+You can quickly provide feedback on translated files directly within your document library. When viewing a translated file in the library, hover over the file name to access the file card. Use the thumbs up (👍) or thumbs down (👎) icon to rate the translation quality.
+
+![Screenshot of the feedback notification for translation.](../media/content-understanding/translation-feedback-1.png)
+
+After selecting an icon, you’ll be prompted to:
+
+- Rate the feature
+- Add comments
+- Optionally, attach the source or translated documents
+- Opt in to include diagnostic logs
+- Opt in to allow Microsoft to follow up with you
+
+![Screenshot of the submit feedback to Microsoft screen.](../media/content-understanding/translation-feedback-2.png)
+
+Your feedback helps us improve the translation experience.
+
+<!---
+Use the thumbs up (![Image of the thumbs up icon.](../media/content-understanding/icon-thumbs-up.png)) 👍 or thumbs down (![Image of the thumbs down icon.](../media/content-understanding/icon-thumbs-down.png)) 👎 icon to rate the translation quality.
+--->

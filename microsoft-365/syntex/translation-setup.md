@@ -1,5 +1,5 @@
 ---
-title: Set up and manage document translation in Microsoft Syntex
+title: Set up and manage document translation in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -17,9 +17,9 @@ ms.localizationpriority:  medium
 description: Learn how to set up document translation in SharePoint.
 ---
 
-# Set up and manage document translation in Microsoft Syntex
+# Set up and manage document translation in SharePoint
 
-The document translation service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+Document translation is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 

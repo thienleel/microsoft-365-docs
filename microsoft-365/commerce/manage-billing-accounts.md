@@ -25,7 +25,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn about Microsoft business billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
-ms.date: 07/16/2024
+ms.date: 05/05/2025
 ---
 
 # Understand your Microsoft business billing account
@@ -86,7 +86,7 @@ The following table lists the terms shown on the billing account details page.
 |Tax ID                           |This field only applies if you’re in a country or region that requires you to provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 |Registration number (Optional)   |A legal registration number that you provide to us so we can review the details of your account. For more information, see [About registration numbers and under-review notifications](about-registration-numbers.md). To add a registration number, select **Edit**. |
 |Type|The type of billing account.|
-|Agreements|Links to the agreements signed by your organization with Microsoft|
+|Agreements|Links to the agreements signed by your organization with Microsoft.  Not all agreements are available to view online.|
 
 > [!NOTE]
 > If you need to change the **Sold-to** name, you must [contact support](../admin/get-help-support.md) to change it. Requests to change the **Sold-to** name require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of the following documents with Microsoft when you contact support:

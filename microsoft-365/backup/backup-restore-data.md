@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 02/19/2025
+ms.date: 03/11/2025
 ms.topic: how-to
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -141,6 +141,11 @@ Follow these steps to restore data backed up for SharePoint.
   
 # [Exchange](#tab/exchange)
 
+> [!NOTE]
+> Items moved to the Deleted Items folder won't be restored by Microsoft 365 Backup. Mailbox users can recover these items themselves by moving them back to the Inbox from the Deleted Items folder. Only mailbox items that were changed, deleted to the Recoverable Items folder, or purged can be restored.
+>
+> For more information, see the [Considerations when using restore](#considerations-when-using-restore) section later in this article.
+
 Microsoft 365 Backup restores deleted or modified mailbox items from the selected prior point in time. Items that remain unchanged in the primary mailbox are compared to that prior point in time, and new items since that prior point in time aren't restored, reverted, or overwritten. This is true whether an in-place or new-folder restore is conducted and is done to prevent excessive operations that might overload your mailbox and its associated storage allocation.
 
 Follow these steps to restore data backed up for Exchange.
@@ -168,7 +173,7 @@ Follow these steps to restore data backed up for Exchange.
 
 3. The destination of restored items can be chosen from two options, then select **Next**.
 
-    a. **Create a new folder for the backups** where the content will be restored to a newly created folder named *Restored Items YYYY-DD-MM, HH:MM*.
+    a. **Create a new folder for the backups** where the content will be restored to a newly created folder named *Recovered Items YYYY-DD-MM, HH:MM*.
 
     b. **Replace mailbox items with backups** where current version of the item will be overwritten by the restored content.
 
@@ -235,54 +240,59 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
 ## Considerations when using restore
 
-- Site search is case-sensitive and is a prefix-type search.
+- OneDrive and Sharepoint
 
-- OneDrive accounts and SharePoint sites being restored to a prior point in time aren't locked in a read-only state. Therefore, users might not realize their current edits will be imminently rolled back and lost.
+    - Site search is case-sensitive and is a prefix-type search.
 
-- For restores to a new URL, it might take up to 15 minutes for the destination URL to be displayed in the tool once a SharePoint site or OneDrive account restore to a new URL session completes.
+    - OneDrive accounts and SharePoint sites being restored to a prior point in time aren't locked in a read-only state. Therefore, users might not realize their current edits will be imminently rolled back and lost.
 
-- A OneDrive account or SharePoint site that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you have to restore to a new URL or remove the hold. Any other type of preservation hold that doesn't have a strict admin lockout allows an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
+    - For restores to a new URL, it might take up to 15 minutes for the destination URL to be displayed in the tool once a SharePoint site or OneDrive account restore to a new URL session completes.
 
-- The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points start being generated when you create the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10 minutes for the entire year. For OneDrive and SharePoint, the available restore points are available for 10 minutes for up to 2 weeks prior, and weekly for 2 to 52 weeks prior. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.
+    - A OneDrive account or SharePoint site that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you have to restore to a new URL or remove the hold. Any other type of preservation hold that doesn't have a strict admin lockout allows an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
+ 
+    - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.
+ 
+    - OneDrive accounts and SharePoint sites being restored to a new URL have a read-only lock on that new URL. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can download documents or remove the read-only lock manually.
 
-    - Megan, the Backup admin, creates a policy for the SharePoint site "HR Hub" on February 1, 2024, at 8:00 AM PST. At 10:00 AM PST, she has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
+        [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
-    - On April 1, 2024, she has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If she wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1, or up to 52 weeks if the policy was created at least 52 weeks in the past.
+- Exchange
 
-    - Megan then adds a user’s mailbox to the policy on February 1, 2024, at 11:00 AM PST. She has the option of restoring modified or deleted items from that user's mailbox to any 10-minute period during the entire retention period.
+    - Mailbox draft items aren't backed up or restorable.
 
-- Users whose Microsoft Entra ID has been deleted will be displayed as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some [special handling is needed to restore them](backup-faq.md#what-is-the-service-recovery-point-objective).
+    - For calendar item restore, restoring organizer copy doesn't automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
 
-- Mailbox draft items aren't backed up or restorable.
+    - Only mailbox items that were changed, deleted to the Recoverable Items folder, or purged can be restored. Learn more about the [Recoverable Items folder in Exchange Online](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder).
 
-- For calendar item restore, restoring organizer copy doesn't automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
+    - Items moved to the Deleted Items folder won't be restored by Microsoft 365 Backup. Mailbox users can recover these items themselves by moving them back to the Inbox from the Deleted Items folder.
 
-- To restore a OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID, use this instruction:  
+    - When choosing to "Replace mailbox items with backups," items are restored to the original location in the user's Inbox.  The only exception to this is if an item was edited while in the Deleted Items folder, as this creates a new version of an item where its original location is the Deleted Items folder.
+      
+    - If the parent folder of an item has been deleted, the item will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
+ 
+- All
 
-    > [!NOTE]
-    > Deleted users appear as "–" in the user interface because the user doesn't exist in the tenancy. However, the backups and associated restore points are retained for the full 365-day retention period from when a given restore point was originally created.
+    - Abusive restore actions aren't permitted. You should limit restores for testing purposes to no more than twice a month per protection unit. Restores for real recovery purposes aren't limited.
 
-    If the user has been deleted within the past 30 days, the best option is to restore the user based on instructions found at [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once the user is reconstituted, the name reappears in the Backup tool restore experience, and the rest of the experience will work as normal.
+    - The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points start being generated when you create the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10 minutes for the entire year. For OneDrive and SharePoint, the available restore points are available for 10 minutes for up to 2 weeks prior, and weekly for 2 to 52 weeks prior. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.
+    
+        - Megan, the Backup admin, creates a policy for the SharePoint site "HR Hub" on February 1, 2024, at 8:00 AM PST. At 10:00 AM PST, Megan has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
+    
+        - On April 1, 2024, Megan has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If Megan wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1, or up to 52 weeks if the policy was created at least 52 weeks in the past.
+    
+        - Megan then adds a user’s mailbox to the policy on February 1, 2024, at 11:00 AM PST. Megan has the option of restoring modified or deleted items from that user's mailbox to any 10-minute period during the entire retention period.
+    
+    - Users whose Microsoft Entra ID has been deleted will be displayed as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some [special handling is needed to restore them](backup-faq.md#what-is-the-service-recovery-point-objective).
+    
+    - To restore a OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID, use this instruction:  
+    
+        > [!NOTE]
+        > Deleted users appear as "–" in the user interface because the user doesn't exist in the tenancy. However, the backups and associated restore points are retained for the full 365-day retention period from when a given restore point was originally created.
+    
+        If the user has been deleted within the past 30 days, the best option is to restore the user based on instructions found at [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once the user is reconstituted, the name reappears in the Backup tool restore experience, and the rest of the experience will work as normal.
+    
+        For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-    For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
-
-    For Exchange, if the user account is currently or permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
-
-    - [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
-    - [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
-
-    Once an inactive mailbox is recovered and restored to a new mailbox, the new mailbox must be added to the backup policy if desired.
-
-- OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
-
-- Only mailbox items that were changed, deleted to the Recoverable Items folder, or purged can be restored. Learn more about the Recoverable Items folder in Exchange Online.
-
-- Items moved to Deleted Items folder won't be restored by Microsoft 365 Backup. You can recover them by moving them back to the Inbox from the Deleted Items folder.
-
-- When choosing to "Replace mailbox items with backups," items are restored to the original location in the user's Inbox.  The only exception to this is if an item was edited while in the Deleted Items folder, as this creates a new version of an item where its original location is the Deleted Items folder.
-
-- OneDrive accounts and SharePoint sites being restored to a new URL have a read-only lock on that new URL. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can download documents or remove the read-only lock manually.
-
-    [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
-
-- Abusive restore actions aren't permitted. You should limit restores for testing purposes to no more than twice a month per protection unit. Restores for real recovery purposes aren't limited.
+        For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover the inactive mailbox, follow the guidance at [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox) to convert the inactive mailbox to a new, active mailbox. Once the inactive mailbox is recovered, remove the deleted user from the backup policy and then add the new user to the backup policy to access backups from the recovered mailbox.
+      
+    

@@ -43,11 +43,11 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 - Fast backup within hours.
 
-- Fast restore within hours (see [performance expectations](#performance-expectations) later in this article).
+- Fast restore (see [performance expectations](#performance-expectations) later in this article).
 
 - Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state (excluding, for example, taxonomy mastered outside the site scope) at specific prior points in time via a rollback operation.
 
-- Full Exchange mailbox item restores or granular item restores using search, for modified or deleted items.
+- Full Exchange mailbox item restores or granular item restores using search, for modified or fully deleted items.
 
 - Consolidated security and compliance domain management.
 
@@ -77,7 +77,7 @@ Our backups are protected from malicious overwrites because OneDrive, SharePoint
 
 Key architectural takeaways:
 
-- Data never leaves the Microsoft 365 data trust boundary or the geographic locations of your current data residency.
+- Data never leaves the Microsoft 365 data trust boundary and honors the geographic locations of your current data residency. Limited metadata (for example, tenantID and siteIDs) sent to Azure for billing purposes only.
 
 - The backups are immutable unless expressly deleted by the Backup tool admin via product offboarding.
 
@@ -107,12 +107,14 @@ The following table summarizes expected performance for a normally distributed t
 |1     |30 minutes         |2 hours         |
 |50     |3 hours         |2.5 hours         |
 |250     |4 hours         | 3 hours        |
-|1,000     |10 hours         |4 hours         |
-|More than 1,000    |250/hour<br>Up to 3 TB/hour         |250+/hour<br>Up to 2.7 TB/hour         |
+|1,000+     |Up to 250 protection units per hour       |4 hours         |
+|1,000+|Up to 250 protection units/hour<br>Up to 2 TB/hour*         |250+ protection units/hour<br>Up to 2 TB/hour*         |
 
-<sup>*Single protection unit OneDrive and SharePoint restores using express restore points can take on average between 10 minutes and 120 minutes.</sup>
+<sup>Restore performance notes:</sup>
 
-<sup>**Exchange Online performance times based on an average sized mailbox of 26K items and a size of 10 GB.  Actual times will depend on the number and size of the items in each mailbox.  For a single mailbox, restore times typically fall in the 200 - 300 item/minute range.</sup>
+<sup>*Single protection unit OneDrive and SharePoint restores using express restore points can take on average between 10 minutes and 120 minutes, depending on site size.</sup> <sup>For mailboxes, restore times typically fall in the 200 - 300 item/minute range.</sup>
+
+<sup>*1,000+ protection unit restore speeds published here are based on internal benchmarking where SharePoint sites have an average of 12GB of stored content per site, Exchange Online mailboxes have an average of 26K items and an aggregate size of 10 GB.  Those bulk recoveries use the in-place restore option, which is typical for large scale attack recovery scenarios. Actual times will depend on the number and size of the items in each site/mailbox.</sup> 
 
 ## Pay-as-you-go billing
 

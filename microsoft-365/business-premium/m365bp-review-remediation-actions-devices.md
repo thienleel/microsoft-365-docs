@@ -53,6 +53,6 @@ The following table lists remediation actions that are available:
 |Source|Actions|
 |---|---|
 |[Automated attack disruption](/defender-business/mdb-attack-disruption) (NEW!)|<ul><li>Contain a device</li><li>Contain a user account on a device</li></ul>|
-|[Automated investigations](/defender-endpoint/automated-investigations)|<ul><li>Quarantine a file/li><li>Remove a registry key/li><li>Kill a process/li><li>Stop a service/li><li>Disable a driver/li><li>Remove a scheduled task</li></ul>|
-|[Manual response actions](/defender-endpoint/respond-machine-alerts)|<ul><li>Run antivirus scan/li><li>Isolate device/li><li>Add an indicator to block or allow a file</li></ul>|
-|[Live response](/defender-endpoint/live-response)|<ul><li>Collect forensic data/li><li>Analyze a file/li><li>Run a script/li><li>Send a suspicious entity to Microsoft for analysis/li><li>Remediate a file/li><li>Proactively hunt for threats</li></ul>|
+|[Automated investigations](/defender-endpoint/automated-investigations)|<ul><li>Quarantine a file</li><li>Remove a registry key</li><li>Kill a process/li><li>Stop a service</li><li>Disable a driver</li><li>Remove a scheduled task</li></ul>|
+|[Manual response actions](/defender-endpoint/respond-machine-alerts)|<ul><li>Run antivirus scan</li><li>Isolate device</li><li>Add an indicator to block or allow a file</li></ul>|
+|[Live response](/defender-endpoint/live-response)|<ul><li>Collect forensic data</li><li>Analyze a file</li><li>Run a script</li><li>Send a suspicious entity to Microsoft for analysis</li><li>Remediate a file</li><li>Proactively hunt for threats</li></ul>|

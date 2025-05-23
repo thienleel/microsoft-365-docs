@@ -104,8 +104,6 @@ items:
           items:
            - name: Add users
              href: add-users/add-users.md
-           - name: Add a new employee
-             href: add-users/add-new-employee.md
            - name: Assign or unassign licenses for users
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
@@ -300,6 +298,10 @@ items:
               href: activity-reports/email-activity-ww.md
             - name: Email apps usage
               href: activity-reports/email-apps-usage-ww.md
+            - name: Enable app analytics in the Developer Portal
+              href: manage/enable-dev-analytics.md
+            - name: Exchange Web Services usage
+              href: activity-reports/ews-usage.md
             - name: Forms activity
               href: activity-reports/forms-activity-ww.md
             - name: Mailbox usage
@@ -328,6 +330,8 @@ items:
               href: activity-reports/sharepoint-activity-ww.md
             - name: SharePoint site usage
               href: activity-reports/sharepoint-site-usage-ww.md
+            - name: SharePoint storage
+              href: activity-reports/sharepoint-storage-reports.md 
             - name: Visio activity
               href: activity-reports/visio-activity.md
             - name: Viva Goals activity
@@ -356,8 +360,8 @@ items:
               href: adoption/teamwork.md
             - name: Meetings
               href: adoption/meetings-new.md
-            - name: AI assistance
-              href: adoption/ai-assistance.md
+            - name: AI adoption score
+              href: adoption/ai-adoption-score.md
             - name: Organizational Messages
               href: adoption/organizational-messages.md
             - name: Group Level Aggregates
@@ -452,20 +456,6 @@ items:
              href: manage/servicenow-troubleshooting.md
            - name: Integrate Microsoft 365 with ServiceNow Virtual Agent
              href: manage/servicenow-virtual-agent-integration.md
-           - name: Microsoft 365 support integration guide for version 1.0.11 and earlier 
-             items:
-              - name: Configuration overview
-                href: manage/servicenow-overview-v1.md
-              - name: Configure basic authentication
-                href: manage/servicenow-basic-authentication-v1.md
-              - name: Configure Microsoft 365 support integration with Microsoft Entra auth Token
-                href: manage/servicenow-aad-oauth-token-v1.md
-              - name: Testing the configuration
-                href: manage/servicenow-testing-the-configuration-v1.md
-              - name: Troubleshooting
-                href: manage/servicenow-troubleshooting-v1.md
-              - name: Integrate Microsoft 365 with ServiceNow Virtual Agent
-                href: manage/servicenow-virtual-agent-integration-v1.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
     - name: Secure your organization
@@ -548,16 +538,18 @@ items:
           href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a Teams meeting with guest users
           href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
-    - name: Microsoft 365 feature descriptions
-      href: m365-feature-descriptions.md
     - name: Engineering Direct Portal
       href: ../enterprise/engineering-direct-portal.md?toc=/microsoft-365/admin/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Troubleshoot
       href: /office/troubleshoot/  
     - name: Contact support
-      href: get-help-support.md
+      items:
+        - name: Get support for Microsoft 365 for business
+          href: get-help-support.md
+        - name: Case creation and diagnostic data
+          href: support-diagnostic-information-collection.md
     - name: Find support phone numbers
-      href: support-contact-info.md
+      href: https://support.microsoft.com/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2#ID0EBBD=signinorgid
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
       

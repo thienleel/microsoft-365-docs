@@ -1,10 +1,10 @@
 ---
-title: Create a signature request using SharePoint eSignature
+title: Create a signature request from a PDF in SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 09/10/2024
+ms.date: 05/06/2025
 audience: enabler
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -14,14 +14,17 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use SharePoint eSignature to create and send electronic signature requests to people inside and outside of your organization. 
+description: Learn how to use SharePoint eSignature to create and send electronic signature requests from a PDF file to people inside and outside of your organization. 
 ---
 
-# Create a signature request using SharePoint eSignature
+# Create a signature request from a PDF in SharePoint eSignature
 
-## Create a signature request
+## Create a signature request from a PDF
 
 Use the following steps to start the SharePoint eSignature process. You must be signed in to SharePoint by using your work email address.
+
+> [!NOTE]
+> Only PDF documents are supported at this time.
 
 1. From a SharePoint document library, open the document for which you want to start the eSignature process.
 
@@ -45,27 +48,37 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
     Once sent, the status of the request is set to **In progress**.  An email notification is sent to the creator and the recipients. If **Recipients must sign in order** is toggled on, recipients will be able to add their signature in the order specified, otherwise they can add their signature in any order.  
 
+<!---
+#### Processing notifications
+
+When you create a request, you receive notifications that update you on the processing status.
+
+- Notification that the request is processing
+
+    ![Screenshot of the notification that the request is processing.](../media/content-understanding/esignature-notification-processing.png)
+
+- Notification that you can access the PDF to review or sign
+
+    ![Screenshot of the notification that the PDF is ready to review and sign.](../media/content-understanding/esignature-notification-processing.png)
+
+You can create a new request without needing to dismiss the notification.
+
+- Notifications that the initial request has been sent, and that a second request is processing
+
+    ![Screenshot of notifications that a request has been sent and a second request is processing.](../media/content-understanding/esignature-notification-send-second-request.png)
+
+You can also keep track of multiple requests with stacked notifications that can be dismissed.
+
+- Each notification represents a distinct eSignature request
+
+    ![Screenshot of notifications showing that two requests have been sent.](../media/content-understanding/esignature-notification-two-requests-sent.png)
+--->
+
 #### Track and manage other provider requests
 
 Managing ongoing eSignature requests for other providers is done on the provider website or through the Approvals app in Microsoft Teams. You'll also be notified by email from the provider throughout the signing process.
 
-## Cancel a signature request
-
-If you create a signature request and want to cancel it, follow these steps.
-
-1. From one of your email notifications, select **View Request**.
-
-2. When the document is open in the document viewer, select **More options** (...), and then select **Cancel request**.
-
-    ![Screenshot of a document showing the Cancel signature request option.](../media/content-understanding/esignature-cancel-signature-request-option-dark.png)
-
-3. On the **Cancel signature request** confirmation screen, enter a message detailing why the request is canceled if needed, and then select **Yes, cancel**.
-
-    ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation-dark.png)
-
-    Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action is possible on this request.
-
-### Create a signature request using another provider
+## Create a signature request using another provider
 
 Use the following steps to start an electronic signature in SharePoint using another provider, such as Adobe Acrobat Sign or DocuSign.
 
@@ -84,10 +97,10 @@ Use the following steps to start an electronic signature in SharePoint using ano
 6. The provider's website opens in another browser tab.
 
 7. On the new tab, proceed with the request creation process as you normally would.
-   
-9. Once completed, you can close all document tabs.
-    
-10. To cancel or track a request from other providers, you can do this in the Approvals app in Teams or via the provider's website.
+
+8. Once completed, you can close all document tabs.
+
+9. To cancel or track a request from other providers, you can do this in the Approvals app in Teams or via the provider's website.
 
 <br>
 

@@ -60,6 +60,5 @@ For answers to billing questions, see:
 ## Related content
 
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)\
-[Add a new employee](../add-users/add-new-employee.md) (video)\
 [Remove a former employee](../add-users/remove-former-employee.md) (video)\
 [Access and back up a former user's data](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (article)

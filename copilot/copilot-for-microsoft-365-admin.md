@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/19/2024
+ms.date: 05/01/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-copilot

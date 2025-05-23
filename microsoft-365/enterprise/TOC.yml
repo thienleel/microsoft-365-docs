@@ -101,8 +101,6 @@ items:
               href: office-365-network-mac-perf-score.md
             - name: Microsoft 365 Network Insights
               href: office-365-network-mac-perf-insights.md
-            - name: Microsoft 365 Network Provider Information
-              href: office-365-network-mac-perf-nppux.md
             - name: Microsoft 365 Network Provider Assessments
               href: office-365-network-mac-perf-nppdata.md
             - name: Microsoft 365 Network Provider Details
@@ -595,8 +593,8 @@ items:
       href: contoso-networking.md
     - name: Identity
       href: contoso-identity.md
-    - name: Windows 10 Enterprise
-      href: contoso-win10.md
+    - name: Windows 11 Enterprise
+      href: contoso-win11.md
     - name: Microsoft 365 Apps for enterprise
       href: contoso-o365pp.md
     - name: Mobile device management

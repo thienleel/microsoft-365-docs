@@ -1,5 +1,5 @@
 ---
-title: Analyze how your models are used in Microsoft Syntex
+title: Analyze how your document processing models are used in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to find more information about how your AI models are performing in Microsoft Syntex.
+description: Learn how to find more information about how your document processing models are performing in SharePoint.
 ---
 
-# Analyze how your models are used in Microsoft Syntex
+# Analyze how your document processing models are used in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -26,7 +26,7 @@ description: Learn how to find more information about how your AI models are per
 
 </br>
 
-Your content center in Microsoft Syntex provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The **How your models are performing in the last 30 days** section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
+Your content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The **How your models are performing in the last 30 days** section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
 
 - Classification by model
 - Classification by library
@@ -50,7 +50,7 @@ Regarding model usage analytics, note that:
 
 The **Classification by model** pie chart displays which models have classified the most files. It shows each published model as a percentage of the total files processed by all published models on the content center.
 
-Each model also shows the **Completeness Rate**, the percentage of uploaded files that were successfully analyzed by the model. A low completeness rate may mean that there are issues with either the model or the files that are being analyzed.
+Each model also shows the **Completeness Rate**, the percentage of uploaded files that were successfully analyzed by the model. A low completeness rate might mean that there are issues with either the model or the files that are being analyzed.
 
 ## Classification by library
 

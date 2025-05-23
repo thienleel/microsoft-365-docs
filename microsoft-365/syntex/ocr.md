@@ -1,5 +1,5 @@
 ---
-title: Set up and manage optical character recognition in Microsoft Syntex
+title: Set up and manage optical character recognition in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 description: Learn how to set up and manage optical character recognition in SharePoint.
 ---
 
-# Set up and manage optical character recognition in Microsoft Syntex
+# Set up and manage optical character recognition in SharePoint
 
-The optical character recognition (OCR) service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+Optical character recognition (OCR) is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 ### Set up data loss prevention policies using OCR
 
-The compliance admin for your organization can also [configure the OCR settings for your tenant](../compliance/ocr-learn-about.md?#phase-3-configure-your-ocr-settings) for [data loss prevention policies](../compliance/dlp-learn-about-dlp.md) in the Microsoft Purview compliance portal.
+The compliance admin for your organization can also [configure the OCR settings for your tenant](../compliance/ocr-learn-about.md?#phase-3-configure-your-ocr-settings) for [data loss prevention policies](../compliance/dlp-learn-about-dlp.md) in the Microsoft Purview portal.
 
 The compliance admin can specify which SharePoint sites to include for data loss prevention. If there are different sites specified for Syntex and data loss prevention, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing.
 

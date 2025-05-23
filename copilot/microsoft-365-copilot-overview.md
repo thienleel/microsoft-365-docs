@@ -93,11 +93,11 @@ Microsoft Graph includes information on users, their activities, and the organiz
 
 To learn more, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
-✅ **Semantic index**
+✅ **Semantic indexing for Microsoft 365 Copilot**
 
-Semantic index is generated from content in [Microsoft Graph](https://developer.microsoft.com/graph). It helps create contextually relevant responses to user prompts. It allows organizations to search through billions of vectors (mathematical representations of features or attributes) and return related results.
+Microsoft 365 Copilot enhances search relevance and accuracy by using advanced lexical and semantic understanding of Microsoft Graph data, resulting in more contextually precise information retrieval. Copilot preserves security, compliance, and privacy, ensuring organizational boundaries are respected while offering seamless user experience.
 
-To learn more, see [Semantic index for Copilot](/microsoftsearch/semantic-index-for-copilot) and [Semantic Index explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU) (opens YouTube's web site).
+To learn more, see [Semantic indexing for Microsoft 365 Copilot](/microsoftsearch/semantic-index-for-copilot) and [Semantic Index explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU) (opens YouTube's website).
 
 ## Copilot features in Microsoft 365 apps
 

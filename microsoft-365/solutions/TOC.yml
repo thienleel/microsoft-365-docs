@@ -35,7 +35,7 @@ items:
       items:
       - name: Overview
         href: manage-devices-with-intune-overview.md
-      - name: Step 1. Implement App Protection policies
+      - name: Step 1. Implement app protection policies
         href: manage-devices-with-intune-app-protection.md
       - name: Step 2. Enroll devices into management
         href: manage-devices-with-intune-enroll.md

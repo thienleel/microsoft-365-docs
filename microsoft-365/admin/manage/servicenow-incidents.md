@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 03/01/2023
+ms.date: 04/28/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -23,6 +23,9 @@ description: "A feature that creates new ServiceNow incidents when a Microsoft S
 ---
 
 # Automatic ServiceNow Incident Creation
+
+> [!IMPORTANT]
+> Microsoft 365 support integration with ServiceNow is retired, and the service will be completely shut down on May 30, 2025. If you installed the integration, take necessary steps to remove it before May 30, 2025.
 
 The Microsoft 365 support integration app enables you to create ServiceNow incidents when a Microsoft Service Health Incident is published for your tenant. To use this feature, you must use version 2.1.0 or later. This feature helps IT teams by automatically creating incidents in ServiceNow when Microsoft publishes new service health incidents.
 

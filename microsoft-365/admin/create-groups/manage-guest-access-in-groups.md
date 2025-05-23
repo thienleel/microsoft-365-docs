@@ -21,6 +21,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - no-azure-ad-ps-ref
+- m365-groups
 search.appverid:
 - MET150
 - MOE150
